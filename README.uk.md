@@ -51,7 +51,7 @@ Pages, в ветку `gh-pages`, каждый раз когда обновляе
 ```json
 "homepage": "https://your_username.github.io/your_repo_name/",
 "scripts": {
-  "build": "parcel build src/*.html --public-url /your_repo_name/"
+  "build": "parcel build src/*html --public-url /your_repo_name/"
 },
 ```
 
