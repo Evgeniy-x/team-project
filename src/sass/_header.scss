@@ -11,6 +11,8 @@ html {
 a {
     display: inline-block;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -33,6 +35,12 @@ ul {
     align-items: center;
     padding-top: 28px;
     padding-bottom: 28px;
+}
+
+.header-logo {
+    width: 60px;
+    height: 60px;
+    line-height: 0;
 }
 
 .menu {
@@ -63,10 +71,19 @@ ul {
     color: #f8d24e;
 }
 
-.header-button {
-    background-color: #f8d24e;
-    position: relative;
+.header-button__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 60px;
+    width: 250px;
 }
+
+.header-button {
+    position: relative;
+    background-color: #f8d24e;
+}
+
 .header-button__img {
     position: absolute;
     right: 20px;
@@ -102,11 +119,6 @@ ul {
 }
 
 @media screen and (min-width: 481px) {
-    .logo--mobile {
-        position: absolute;
-        top: 28px;
-        left: 15px;
-    }
 
     .mobile-button {
         display: none;
@@ -124,10 +136,7 @@ ul {
     .menu {
         display: none;
     }
-    .mobile-menu-open {
-        position: absolute;
-        right: 150px;
-    }
+
     .mobile-menu {
         width: 100%;
         height: 100%;
@@ -138,7 +147,6 @@ ul {
         z-index: 1000;
         padding: 80px 40px;
         display: flex;
-        /* flex-direction: column; */
         justify-content: space-between;
     }
 
