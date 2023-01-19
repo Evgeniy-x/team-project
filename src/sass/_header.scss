@@ -182,6 +182,10 @@ ul {
         line-height: 39px;
         color: #fcfcfc;
     }
+    .mobile-menu__link:hover,
+    .mobile-menu__link:focus {
+        color: #131313;
+    }
 }
 
 @media screen and (max-width: 767px) {
