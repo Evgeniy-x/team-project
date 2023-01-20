@@ -1,4 +1,128 @@
 .products {
-    background-color: blue;
-    color: beige;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products-title {
+    margin-top: 0;
+    margin-bottom: 148px;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.products-label {
+    margin-top: 0;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.products-cards {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.products-card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 168px;
+    position: relative;
+    max-width: 280px;
+    border-radius: 24px;
+}
+
+.products-card:last-of-type {
+    margin: 0;
+}
+
+.products-card-first {
+    background-color: var(--color-card-first);
+}
+
+.products-card-second {
+    background-color: var(--color-card-second);
+}
+
+.products-card-third {
+    background-color: var(--color-card-third);
+}
+
+.products-card-content {
+    padding-top: 123px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.products-card-content::before,
+.products-card-content::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.products-card-content-first::before {
+    top: -110px;
+    background-image: url('../kelsey-curtis-G5ZenftPPOA-unsplash\ 2.png');
+    z-index: 5;
+}
+
+.products-card-content-first::after {
+    top: -97px;
+    background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    z-index: 4;
+}
+
+.products-card-content-second::before {
+    top: -110px;
+    background-image: url('../pariwat-pannium-0_qbeF_0zn8-unsplash\ 1.png');
+    z-index: 5;
+}
+
+.products-card-content-second::after {
+    top: -97px;
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    z-index: 4;
+}
+
+.products-card-content-thirt::before {
+    top: -110px;
+    background-image: url('../victor-rutka-4FujjkcI40g-unsplash\ 1.png');
+    z-index: 5;
+}
+
+.products-card-content-thirt::after {
+    top: -97px;
+    background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+}
+
+.products-card-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--color-text);
+}
+
+.products-card-desc {
+    margin-bottom: 101px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.79;
+}
+
+.products-card-btn {
+    border: none;
+    background: none;
+    margin-bottom: 16px;
 }
