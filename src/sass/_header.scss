@@ -14,9 +14,14 @@ a {
     margin: 0;
     padding: 0;
 }
-
+li {
+    margin: 0;
+    padding: 0;
+}
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -41,10 +46,11 @@ ul {
     width: 60px;
     height: 60px;
     line-height: 0;
+
 }
 
 .menu {
-    padding-top: 12px;
+    padding-top: 20px;
 }
 
 .menu-list {
