@@ -1,0 +1,130 @@
+.hero {
+   padding-top: 50px;
+   background-color: var(--color-backgraund-dark);
+}
+
+.hero-title {
+   width: 247px;
+   margin-bottom: 32px;
+
+   color: var(--color-title);
+   font-family: var(--font-logo);
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 1.27;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+}
+.hero-title-passion {
+   font-size: 34px;
+   line-height: 0.97;
+}
+
+.hero-products-button {
+   width: 108px;
+   height: 38px;
+   margin-right: 12px;
+   margin-bottom: 19px;
+
+   background: none;
+   color: #000;
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.25;
+   border: 2px solid var(--color-logo);
+   border-radius: 8px;
+}
+.hero-instruction-link {
+   color: var(--color-logo);
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 1.25;
+   text-decoration-line: underline;
+}
+
+@media screen and (max-width: 767px) {
+   .image-and-text-arrow,
+   .cafes-and-food-trucks {
+      display: none;
+   }
+}
+@media screen and (max-width: 479px) {
+   .hero-trio-ice-image {
+      width: 177px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and (min-width: 480px) {
+   .hero {
+      position: relative;
+      padding-top: 40px;
+      padding-bottom: 150;
+   }
+   .hero-products-button {
+      margin-bottom: 0;
+   }
+   .hero-trio-ice-image {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      width: 218px;
+   }
+}
+
+@media screen and (min-width: 768px) {
+   .hero {
+      padding-top: 14px;
+      padding-bottom: 12px;
+   }
+   .hero-title {
+      margin-bottom: 24px;
+   }
+   .hero-products-button {
+      margin-bottom: 12px;
+   }
+   .image-and-text-arrow {
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+   }
+   .hero-trio-ice-image {
+      right: 92px;
+      bottom: 0;
+      width: 268px;
+   }
+   .hero-text {
+      width: 139px;
+      color: var(--color-title);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.42;
+   }
+   .cafes-and-food-trucks {
+      position: absolute;
+      right: 32px;
+      top: 28px;
+   }
+   .cafes-box {
+      margin-bottom: 20px;
+   }
+   .hero-numbers {
+      margin-bottom: 4px;
+
+      color: var(--color-text);
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.21;
+      text-align: right;
+      letter-spacing: 0.04em;
+   }
+   .hero-numbers-title {
+      color: var(--color-title);
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+      letter-spacing: 0.04em;
+   }
+}

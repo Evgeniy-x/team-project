@@ -4,8 +4,44 @@ body {
     font-family: var(--font-main);
     font-weight: 400;
     margin: 0 auto;
-    background-image:  url(../images/test-img.png);
+    background-image: url(../images/background/background_mobile.jpg);
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+    body {
+        background-image: url(../images/background/background_mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(../images/background/background_tablet.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        body {
+            background-image: url(../images/background/background_tablet@2x.jpg);
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../images/background/background_desktop.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        body {
+            background-image: url(../images/background/background_desktop@2x.jpg);
+        }
+    }
+}
+
+
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -14,6 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 img {
@@ -24,10 +61,6 @@ img {
 
 button {
     cursor: pointer;
-}
-
-.list {
-    list-style: none;
 }
 
 a {
@@ -47,4 +80,6 @@ a {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+
 
