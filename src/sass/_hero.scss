@@ -24,6 +24,7 @@
    width: 108px;
    height: 38px;
    margin-right: 12px;
+   margin-bottom: 19px;
 
    background: none;
    color: #000;
@@ -33,7 +34,6 @@
    border: 2px solid var(--color-logo);
    border-radius: 8px;
 }
-
 .hero-instruction-link {
    color: var(--color-logo);
    font-weight: 600;
@@ -46,5 +46,27 @@
    .image-and-text-arrow,
    .cafes-and-trucks {
       display: none;
+   }
+}
+@media screen and (max-width: 479px) {
+   .hero-trio-ice-image {
+      width: 177px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and (min-width: 480px) {
+   .hero-container {
+      position: relative;
+   }
+   .hero-products-button {
+      margin-bottom: 150px;
+   }
+   .hero-trio-ice-image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 218px;
    }
 }
