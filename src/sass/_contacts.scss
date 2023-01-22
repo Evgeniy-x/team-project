@@ -132,3 +132,10 @@
     background: #84A178;
     border: 2px solid #F8D24E;
 }
+
+@media screen and (min-width: 480px) {
+    .contacts-box {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
