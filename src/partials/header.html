@@ -1,84 +1,108 @@
-<section class="header">
+<header class="header">
     <div class="container">
-        <div class="header-inner">
-            <a href="#" class="header-logo">
-                <img src="/src/images/logo.svg" alt="">
-            </a>
-
+        <div class="header__inner">
+            <div class="logo">
+                <a href="#" class="logo__link">
+                    <svg class="logo__icon">
+                        <use href="/src/images/icons.svg#icon-logo"></use>
+                    </svg>
+                </a>
+            </div>
             <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
                             Home
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
                             How it’s made?
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
                             Our products
                         </a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="#">
-                            Contact
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            Contacts
                         </a>
                     </li>
                 </ul>
             </nav>
-
-            <div class="mobile-menu is-hidden" data-mobile>
-                <a href="#" class="header-logo logo--mobile">
-                    <img src="/src/images/logo.svg" alt="">
-                </a>
-
-
-                <button type="button" class="mobile-menu__close-btn" type="button" data-mobile-close>
-                    <img width="20" height="20" src="/src/images/burger-menu-close.svg" alt="menu-close">
+            <div class="menu__inner-btn">
+                <button class="menu__button" type="button" data-mobile-open>
+                    <svg height="32" width="32">
+                        <use href="/src/images/icons.svg#icon-menu"></use>
+                    </svg>
                 </button>
-
-                <ul class="mobile-menu__list">
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="#">
-                            How it’s made?
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="#">
-                            Our products
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-menu__link" href="#">
-                            Contacts
-                        </a>
-                    </li>
-                    <li class="mobile-menu__item">
-                        <a class="mobile-button button">
-                            Buy now
-                            <img class="header-button__img" src="/src/images/arrow-right.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-button__inner">
-                <button type="button" class="mobile-menu-open__svg ">
-                    <img class="mobile-menu-open__icon" src="/src/images/burger-menu.svg" alt="" data-mobile-open>
-                </button>
-                <a class="header-button button">
-                    Buy now
-                    <img class="header-button__img" src="/src/images/arrow-right.svg" alt="">
-                </a>
+                <div class=" menu__button-desctop">
+                    <a class="button m-0">
+                        Buy now
+                    </a>
+                    <svg width="6" height="10" class="button__arrow">
+                        <use href="/src/images/icons.svg#icon-vector-8"></use>
+                    </svg>
+                </div>
             </div>
         </div>
+
     </div>
 
-</section>
+    <div class="mobile-menu is-hidden" data-mobile>
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <svg height="40" width="37">
+                            <use href="/src/images/icons.svg#icon-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <nav>
+                    <button class="menu__button" type="button" data-mobile-close>
+                        <svg class="icon-close-btn" height="20" width="20">
+                            <use href="/src/images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
+        </div>
+
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    Home
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    How it’s made?
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    Our products
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="#">
+                    Contacts
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="mobile__button">
+            <a class="button">
+                Buy now
+            </a>
+            <svg width="6" height="10" class="button__arrow">
+                <use href="/src/images/icons.svg#icon-vector-8"></use>
+            </svg>
+        </div>
+
+    </div>
+</header>

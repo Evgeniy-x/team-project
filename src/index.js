@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+//<<<<<<< HEAD
 //BURGER-MENU
 
 (() => {
@@ -15,7 +15,7 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
-=======
+//=======
 document.addEventListener('DOMContentLoaded', function () {
   /* Swiper */
   (function () {
@@ -30,4 +30,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })();
 });
->>>>>>> main
+//>>>>>>> main
