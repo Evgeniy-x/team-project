@@ -159,7 +159,18 @@
         padding: 40px 24 40px 24px;
     }
 
+    
+
     .contacts-link-map {
+        margin-bottom: 32px;
+    }
+
+    .contacts-link-map::after {
+        content: "";
+        margin-top: 32px;
+}
+
+    .contacts-weekend {
         margin-bottom: 32px;
     }
 }
