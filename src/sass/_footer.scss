@@ -1,6 +1,6 @@
 
 .footer { 
-    background-color: #84A178; 
+    background-color: var(--color-backgraund); 
 } 
 
 .footer-container { 
@@ -22,7 +22,7 @@
     font-size: 18px; 
     line-height: 1.22; 
     text-transform: uppercase; 
-    color: #FCFCFC; 
+    color: var(--color-title); 
 } 
 
 .footer-title { 
@@ -33,7 +33,7 @@
     line-height: 1.2; 
     letter-spacing: 0.04em; 
     text-transform: uppercase; 
-    color:#FCFCFC; 
+    color:var(--color-title); 
 } 
 
 
@@ -55,7 +55,7 @@
 
 .footer-soclink {
 
-    fill: #84A178; 
+    fill: var(--color-backgraund); 
     transform: scale(1); 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
@@ -67,7 +67,7 @@
 
 .footer-socitem:hover, 
 .footer-socitem:focus { 
-    fill: #FCFCFC;
+    fill: var(--color-title);
  }
 
 
@@ -100,7 +100,7 @@
     font-size: 12px; 
     line-height: 186%;
     text-align: right; 
-    color: #FCFCFC; 
+    color: var(--color-text); 
 } 
 
 
