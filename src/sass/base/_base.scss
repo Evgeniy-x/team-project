@@ -1,10 +1,11 @@
 
 
 body {
+    background-image: url(../images/background/background_mobile.jpg);
+    color: var(--color-title);
     font-family: var(--font-main);
     font-weight: 400;
-    margin: 0 auto;
-    background-image: url(../images/background/background_mobile.jpg);
+    font-size: 12px;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -48,9 +49,10 @@ screen and (min-resolution: 2dppx) {
 p, h1, h2, h3, h4, h5, h6, button, ul {
   margin: 0;
   padding: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+}
+
+ul {
+   list-style: none;
 }
 
 img {
@@ -62,7 +64,6 @@ img {
 a {
     text-decoration: none;
 }
-
 
 .visually-hidden {
     position: absolute;
@@ -76,6 +77,3 @@ a {
     clip-path: inset(50%);
     margin: -1px;
 }
-
-
-
