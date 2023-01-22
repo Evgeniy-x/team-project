@@ -23,7 +23,7 @@
     top: 0 ;
     height: 100vh;
     z-index: 1000;
-
+    box-shadow: 0 0 100 500 rgba(132, 161, 120, 1);
 }
 
 .icon-close-btn {
@@ -54,10 +54,6 @@
     color: var(--color-text);
 }
 
-.mobile__button {
-    position: relative;
-}
-
 .button {
     padding: 12px 36px;
     border-radius: 10px;
@@ -73,6 +69,15 @@
     background-color: var(--color-logo);
     width: 152px;
     margin: 114px auto;
+    position: relative;
+}
+
+.button__arrow {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+
 }
 .menu__button-desctop {
     display: none;
@@ -83,9 +88,11 @@
     }
 }
 @media screen and (min-width: 768px) {
+    .mobile__button {
+        display: none;
+    }
     .menu__button-desctop {
         display: block;
-        margin-top: 12px;
         margin-left: 36px;
     }
 
