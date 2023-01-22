@@ -124,6 +124,16 @@
     line-height: calc(18 / 14);
 }
 
+.cont-btn-one:hover {
+    background: #0A8817;
+    border-radius: 10px;
+}
+
+.cont-btn-two:hover {
+    border: 2px solid #0A8817;
+    border-radius: 10px;
+}
+
 .cont-btn-one {
     margin-bottom: 16px;
     background: var(--color-logo);
