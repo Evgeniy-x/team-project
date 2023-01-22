@@ -1,6 +1,6 @@
 
 .contacts-box {
-    background: linear-gradient(0deg, rgb(132, 161, 120,1) 72%, rgb(255, 255, 255,0) 64%);
+    background: linear-gradient(0deg, rgb(132, 161, 120,1) 75%, rgb(255, 255, 255,0) 75%);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .contacts-item {
@@ -100,4 +101,92 @@
     font-size: 12px;
     line-height: 160%;
     color: #131313;
+}
+
+// ------------BUTTON--------------
+.contacts-list-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-item-button {
+    width: 196px;
+    color: #000;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+}
+
+.cont-btn-one {
+    margin-bottom: 16px;
+    background: var(--color-logo);
+}
+
+.cont-btn-two {
+    background: #84A178;
+    border: 2px solid #F8D24E;
+}
+
+@media screen and (min-width: 480px) {
+    .contacts-box {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contacts-box {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(0deg, rgb(132, 161, 120, 1) 60%, rgb(255, 255, 255, 0) 60%);
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .contacts-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contacts-item {
+        width: 224px;
+        padding: 40px 24 40px 24px;
+    }
+
+    
+
+    .contacts-link-map {
+        margin-bottom: 32px;
+    }
+
+    .contacts-link-map::after {
+        content: "";
+        margin-top: 32px;
+}
+
+    .contacts-weekend {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contacts-list {
+            display: flex;
+            
+        }
+
+    .contacts-item {
+            width: 368px;
+            padding: 40px;
+        }
+
+    .conacts-wekdays {
+        margin-bottom: 12px;
+    }
 }
