@@ -1,18 +1,18 @@
 <div class="modal">
-  <div class="modal-ingredients" data-modal="1">
-    <button type="button" class="modal-winwod-close-btn js-modal-close">
-      <svg class="modal-winwod-close-btn-icon" width="13px" height="12px">
-        <use href="../images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
+  <div class="modal-ingredients modal-js" data-modal="1">
     <h2 class="modal__title">Chololate icecream</h2>
+    <button type="button" class="modal-winwod-close-btn js-modal-close">
+        <svg class="modal-winwod-close-btn-icon" width="13px" height="12px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
     <div class="img-wrapper">
       <img
         srcset="
-          ../images/modal/icecreamChololate.jpg    1x,
-          ../images/modal/icecreamChololate@2x.jpg 2x
+          ./images/modal/icecreamChololate.jpg    1x,
+          ./images/modal/icecreamChololate@2x.jpg 2x
         "
-        src="../images/modal/icecreamChololate.jpg"
+        src="./images/modal/icecreamChololate.jpg"
         alt="Chololate icecream"
         width="132px"
         class="product-photo"
@@ -93,7 +93,9 @@
     </form>
   </div>
 
+  <div class="modal-two" data-modal="1">
+
+  </div>
+
   <div class="overlay js-overlay-modal"></div>
-  <script src="./js/modal-window.js"></script>
-  <div class="modal-two"></div>
 </div>
