@@ -202,6 +202,7 @@
     .contacts-list {
         display: flex;
         margin-bottom: 60px;
+        gap: 32px;
     }
 
     .contacts-item {
@@ -216,5 +217,12 @@
 
     .conacts-wekdays {
         margin-bottom: 12px;
+    }
+
+    .contacts-list-button {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        gap: 16px;
     }
 }
