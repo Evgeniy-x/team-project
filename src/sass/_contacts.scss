@@ -139,3 +139,9 @@
         padding-right: 100px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .contacts-list {
+        display: flex;
+    }
+}
