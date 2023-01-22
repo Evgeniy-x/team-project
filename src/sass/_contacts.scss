@@ -57,8 +57,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 183%;
-    letter-spacing: 0.04em;
-    margin-bottom: 24px;
+    letter-spacing: 0.04em;    
     color: #D6936D;
 }
 
@@ -67,6 +66,7 @@
     display: block;
     border: 1px solid #E1E1E1;
     margin-top: 24px;
+    margin-bottom: 24px;
 
 }
 
@@ -84,9 +84,8 @@
     color: #ABABAB;
 }
 
-.contacts-weekend {
-    margin-top: 8px;
-    margin-bottom: 24px;
+.contacts-weekdays {
+    margin-bottom: 8px;
 }
 
 .contacts-weekend::after {
@@ -94,6 +93,7 @@
     display: block;
     border: 1px solid #E1E1E1;
     margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .contacts-link-tel,
@@ -139,6 +139,11 @@
         padding-left: 100px;
         padding-right: 100px;
     }
+    .contacts-link-map::after {
+        content: "";
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -148,6 +153,12 @@
         background: linear-gradient(0deg, rgb(132, 161, 120, 1) 60%, rgb(255, 255, 255, 0) 60%);
         padding-left: 32px;
         padding-right: 32px;
+    }
+
+    .contacts-link-map::after {
+        content: "";
+        margin-top: 32px;
+        margin-bottom: 32px;
     }
 
     .contacts-list {
@@ -160,6 +171,10 @@
         padding: 40px 24 40px 24px;
     }
 
+    .contacts-mark {
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
     
 
     .contacts-link-map {
@@ -171,21 +186,27 @@
         margin-top: 32px;
 }
 
-    .contacts-weekend {
+    .contacts-weekend::after {
+        content: "";
+        margin-top: 32px;
         margin-bottom: 32px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .contacts-list {
-            display: flex;
-            
-        }
+        display: flex; 
+    }
 
     .contacts-item {
-            width: 368px;
-            padding: 40px;
-        }
+        width: 368px;
+        padding: 40px;
+    }
+
+        .contacts-mark {
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
 
     .conacts-wekdays {
         margin-bottom: 12px;
