@@ -1,4 +1,99 @@
 <div class="modal">
-    <div class="modal-one"></div>
-    <div class="modal-two"></div>
+  <div class="modal-ingredients" data-modal="1">
+    <button type="button" class="modal-winwod-close-btn js-modal-close">
+      <svg class="modal-winwod-close-btn-icon" width="13px" height="12px">
+        <use href="../images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal__title">Chololate icecream</h2>
+    <div class="img-wrapper">
+      <img
+        srcset="
+          ../images/modal/icecreamChololate.jpg    1x,
+          ../images/modal/icecreamChololate@2x.jpg 2x
+        "
+        src="../images/modal/icecreamChololate.jpg"
+        alt="Chololate icecream"
+        width="132px"
+        class="product-photo"
+      />
+    </div>
+    <ul class="ice-cream-ingredients-list">
+      <li class="ice-cream-ingredients-list-item">
+        <span class="ingredients-list-upper-elements">320</span>
+        <span class="ingredients-list-lower-elements">kcal</span>
+      </li>
+      <li class="ice-cream-ingredients-list-item">
+        <span class="ingredients-list-upper-elements">4g</span>
+        <span class="ingredients-list-lower-elements">Protein...</span>
+      </li>
+      <li class="ice-cream-ingredients-list-item">
+        <span class="ingredients-list-upper-elements">8,2g</span>
+        <span class="ingredients-list-lower-elements">Fats</span>
+      </li>
+      <li class="ice-cream-ingredients-list-item">
+        <span class="ingredients-list-upper-elements">40,4g</span>
+        <span class="ingredients-list-lower-elements">Carbs</span>
+      </li>
+    </ul>
+    <table class="product-ingredients">
+      <caption class="product-ingredients-header">
+        Ingredients
+      </caption>
+      <tr class="product-ingredients-row">
+        <td class="product-category">Milk</td>
+        <td class="product-amount">100ml</td>
+      </tr>
+      <tr class="product-ingredients-row">
+        <td class="product-category">Belgian chocolate</td>
+        <td class="product-amount">20g</td>
+      </tr>
+      <tr class="product-ingredients-row">
+        <td class="product-category">Cream</td>
+        <td class="product-amount">150 ml</td>
+      </tr>
+      <tr class="product-ingredients-row">
+        <td class="product-category">Cocoa powder</td>
+        <td class="product-amount">30g</td>
+      </tr>
+      <tr class="product-ingredients-row">
+        <td class="product-category">Sugar</td>
+        <td class="product-amount">40g</td>
+      </tr>
+      <tr class="product-ingredients-row last">
+        <td class="product-category">Vanilla sugar</td>
+        <td class="product-amount">10g</td>
+      </tr>
+    </table>
+    <form class="mobile-window-submit-form">
+      <input
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+$"
+        minlength="2"
+        class="modal-window-input-field user-name"
+      />
+      <input
+        type="tel"
+        name="user-tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="XXX-XXX-XX-XX"
+        class="modal-window-input-field phone-number"
+      />
+      <textarea
+        name="user-message"
+        placeholder="Comment"
+        class="modal-window-input-field user-message"
+      ></textarea>
+      <button type="submit" class="modal-form-submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <div class="overlay js-overlay-modal"></div>
+  <script src="./js/modal-window.js"></script>
+  <div class="modal-two"></div>
 </div>
