@@ -102,3 +102,14 @@
     color: #131313;
 }
 
+// ------------BUTTON--------------
+
+.contacts-list-button {
+    width: 164px;
+    background: var(--color-logo);
+    color: #000;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
