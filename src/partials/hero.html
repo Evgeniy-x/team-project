@@ -6,26 +6,30 @@
          <span class="hero-title-passion">passion</span>
       </h1>
       <button href="#products" class="hero-products-button">Products</button>
-      <a href="#advantages" class="hero-instruction-link">How it`s made?</a>
-      <!-- image + text-arrow -->
-      <div class="image-and-text-arrow">
+      <button href="#advantages" class="hero-instruction-button">How it’s made?</button>
+      <!-- plate-image + text with arrow -->
+      <div class="hero-plate-image-and-text-with-arrow">
+
          <picture>
             <source srcset="./images/hero/plate-desktop.png, ./images/hero/plate-desktop@2x.png 2x"
                media="(min-width: 1200px)" top="300" />
-
             <img srcset="./images/hero/plate-tablet@2x.png 2x" src="./images/hero/plate-tablet.png"
-               class="hero-plate-image" alt="trio icecream" />
+               class="hero-plate-image" alt="trio ice-cream on the plate" />
          </picture>
-         <div class="text-arrow">
+
+         <div class="hero-text-with-arrow">
+
             <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                incididunt ut labore et</p>
-            <svg width="34px" height="34px">
-               <use href="./images/icons.svg#icon-dots-tablet"></use>
+            <svg width="40" height="16">
+               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
+
          </div>
       </div>
-      <!-- це буде position-absolute відносно hero-контейнера-->
+      <!-- це буде завжди position-absolute відносно hero-контейнера-->
       <div class="cafes-and-food-trucks">
+
          <div class="cafes-box">
             <p class="hero-numbers">16</p>
             <p class="hero-numbers-title">cafes</p>
@@ -34,8 +38,9 @@
             <p class="hero-numbers">23</p>
             <p class="hero-numbers-title">food trucks</p>
          </div>
+
       </div>
-      <!-- від media 480px ця картинка стане абсолютом -->
+      <!-- від media 480px картинка з тройним морозивом стане абсолютом -->
       <picture>
          <source srcset="./images/hero/trio-desktop.png, ./images/hero/trio-desktop@2x.png 2x"
             media="(min-width: 1200px)" />
