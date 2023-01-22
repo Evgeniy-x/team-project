@@ -9,11 +9,19 @@
       <a href="#advantages" class="hero-instruction-link">How it`s made?</a>
       <!-- image + text-arrow -->
       <div class="image-and-text-arrow">
-         <img src="#" alt="many tasty ice-cream" width="152" height="152">
+         <picture>
+            <source srcset="./images/hero/plate-desktop.png, ./images/hero/plate-desktop@2x.png 2x"
+               media="(min-width: 1200px)" top="300" />
+
+            <img srcset="./images/hero/plate-tablet@2x.png 2x" src="./images/hero/plate-tablet.png"
+               class="hero-plate-image" alt="trio icecream" />
+         </picture>
          <div class="text-arrow">
             <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                incididunt ut labore et</p>
-            <img src="#" alt="SVG" width="40">
+            <svg width="34px" height="34px">
+               <use href="./images/icons.svg#icon-dots-tablet"></use>
+            </svg>
          </div>
       </div>
       <!-- це буде position-absolute відносно hero-контейнера-->
@@ -28,6 +36,16 @@
          </div>
       </div>
       <!-- від media 480px ця картинка стане абсолютом -->
-      <img class="hero-trio-ice-image" src="#" alt="Ice cream in a waffle cup">
+      <picture>
+         <source srcset="./images/hero/trio-desktop.png, ./images/hero/trio-desktop@2x.png 2x"
+            media="(min-width: 1200px)" />
+         <source srcset="./images/hero/trio-tablet.png, ./images/hero/trio-tablet@2x.png 2x"
+            media="(min-width: 768px)" />
+         <source srcset="./images/hero/trio-mobile-480.png, ./images/hero/trio-mobile-480@2x.png 2x"
+            media="(min-width: 480px)" />
+
+         <img srcset="./images/hero/trio-mobile-320@2x.png 2x" src="./images/hero/trio-mobile-320.png"
+            class="hero-trio-image" alt="trio icecream" />
+      </picture>
    </div>
 </section>
