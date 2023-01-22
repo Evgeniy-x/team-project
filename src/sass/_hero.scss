@@ -9,7 +9,6 @@
 
    color: var(--color-title);
    font-family: var(--font-logo);
-   font-weight: 400;
    font-size: 26px;
    line-height: 1.27;
    letter-spacing: 0.04em;
@@ -34,26 +33,29 @@
    border: 2px solid var(--color-logo);
    border-radius: 8px;
 }
-.hero-instruction-link {
+.hero-instruction-button {
+   width: 100px;
+   height: 24px;
+
+   background: none;
    color: var(--color-logo);
    font-weight: 600;
    font-size: 12px;
    line-height: 1.25;
    text-decoration-line: underline;
+   border: none;
 }
 
-.image-and-text-arrow,
+.hero-plate-image-and-text-with-arrow,
 .cafes-and-food-trucks {
    display: none;
 }
 
 .hero-trio-image {
-   width: inherit;
    margin-left: auto;
    margin-right: auto;
    background-color: inherit;
 }
-
 
 @media screen and (min-width: 480px) {
    .hero {
@@ -68,7 +70,6 @@
       position: absolute;
       right: 20px;
       bottom: 0;
-      width: 218px;
    }
 }
 
@@ -83,7 +84,10 @@
    .hero-products-button {
       margin-bottom: 12px;
    }
-   .image-and-text-arrow {
+   .hero-instruction-button {
+      width: 114px;
+   }
+   .hero-plate-image-and-text-with-arrow {
       display: flex;
       align-items: center;
       column-gap: 32px;
@@ -94,8 +98,9 @@
    }
    .hero-text {
       width: 139px;
+      margin-bottom: 12px;
+
       color: var(--color-title);
-      font-weight: 400;
       font-size: 12px;
       line-height: 1.42;
    }
@@ -119,7 +124,6 @@
    }
    .hero-numbers-title {
       color: var(--color-title);
-      font-weight: 400;
       font-size: 8px;
       line-height: 1.25;
       text-align: right;
@@ -128,9 +132,34 @@
 }
 
 @media screen and (min-width: 1200px) {
+   .hero {
+      padding-top: 45px;
+      padding-bottom: 65px;
+   }
+   .hero-title {
+      margin-bottom: 28px;
+   }
+   .hero-products-button {
+      width: 134px;
+      height: 42px;
+      margin-bottom: 42px;
+   }
+   .hero-instruction-button {
+      width: 154px;
+      height: 40px;
+   }
    .hero-trio-image {
       right: 20px;
       bottom: 0;
-      width: inherit;
+   }
+   .hero-plate-image-and-text-with-arrow {
+      column-gap: 16px;
+   }
+   .hero-text {
+      width: 200px;
+      margin-bottom: 24px;
+
+      font-size: 14px;
+      line-height: 1.43;
    }
 }
