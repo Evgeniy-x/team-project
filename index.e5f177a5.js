@@ -1,0 +1,2 @@
+(()=>{const e={openModalBtn:document.querySelector("[data-mobile-open]"),closeModalBtn:document.querySelector("[data-mobile-close]"),modal:document.querySelector("[data-mobile]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})(),document.addEventListener("DOMContentLoaded",(function(){new Swiper(".customers-swiper",{loop:!0,autoHeight:!0,spaceBetween:20,pagination:{el:".swiper-pagination",clickable:!0}})}));
+//# sourceMappingURL=index.e5f177a5.js.map
