@@ -1,8 +1,10 @@
+
+
 .header {
     background-color: var(--color-backgraund);
 }
 
-.header__inner {
+.header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,7 +12,7 @@
     position: relative;
 }
 
-.logo__icon {
+.logo-icon {
     height:40;
     width: 37px;
 }
@@ -33,16 +35,16 @@
     display: none;
 }
 
-.mobile-menu__list {
+.mobile-menu-list {
     text-align: center;
     margin-top: 100px;
 }
 
-.mobile-menu__item + .mobile-menu__item {
+.mobile-menu-item + .mobile-menu-item {
     margin-top: 32px;
 }
 
-.mobile-menu__link {
+.mobile-menu-link {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -50,7 +52,7 @@
     transition: color 0.3s ease-in-out;
 }
 
-.mobile-menu__link:focus {
+.mobile-menu-link:focus {
     color: var(--color-text);
 }
 
@@ -66,21 +68,26 @@
     align-items: center;
     justify-content: center;
     color: var(--color-text);
-    background-color: var(--color-logo);
+    background-color: #F8D24E;
     width: 152px;
     margin: 114px auto;
     position: relative;
 }
 
-.button__arrow {
+.button-arrow {
     position: absolute;
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
 
 }
-.menu__button-desctop {
+.menu-button-desctop {
     display: none;
+}
+
+.menu-button {
+    background-color: transparent;
+    border: none;
 }
 @media screen and (max-width: 1200px) {
     .menu {
@@ -88,15 +95,15 @@
     }
 }
 @media screen and (min-width: 768px) {
-    .mobile__button {
+    .mobile-button {
         display: none;
     }
-    .menu__button-desctop {
+    .menu-button-desctop {
         display: block;
         margin-left: 36px;
     }
 
-    .menu__inner-btn {
+    .menu-inner-btn {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -107,18 +114,18 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .logo__icon {
+    .logo-icon {
         width: 60px;
         height: 60px;
     }
-    .menu__button-desctop {
+    .menu-button-desctop {
         display: block;
        margin-top: 28px;
     }
     .m-0 {
         margin: 0;;
     }
-    .menu__button {
+    .menu-button {
         display: none;
     }
     .menu {
@@ -127,24 +134,24 @@
         margin-top: 40px;
     }
     
-    .menu__list {
+    .menu-list {
         display: flex;
         justify-content: space-between;
     }
     
-    .menu__item + .menu__item {
+    .menu-item + .menu-item {
         margin-left: 28px;
     }
     
-    .menu__link {
+    .menu-link {
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         color: #FCFCFC;
         transition: color 0.3s ease-in-out;
     }
-    .menu__link:focus,
-    .menu__link:hover {
+    .menu-link:focus,
+    .menu-link:hover {
         color: #F8D24E;
     }
     
