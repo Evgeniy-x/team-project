@@ -1,7 +1,7 @@
 .contacts {
     background: linear-gradient(0deg, rgb(132, 161, 120, 1) 75%, rgb(255, 255, 255, 0) 75%);
 }
-.contacts-box {
+.contacts-container {
     background: linear-gradient(0deg, rgb(132, 161, 120,1) 75%, rgb(255, 255, 255,0) 75%);
     padding-left: 20px;
     padding-right: 20px;
@@ -162,7 +162,7 @@
 }
 
 @media screen and (min-width: 480px) {
-    .contacts-box {
+    .contacts-container {
         padding-left: 100px;
         padding-right: 100px;
     }
@@ -178,7 +178,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    .contacts-box {
+    .contacts-container {
         display: flex;
         flex-direction: column;
         background: linear-gradient(0deg, rgb(132, 161, 120, 1) 60%, rgb(255, 255, 255, 0) 60%);
