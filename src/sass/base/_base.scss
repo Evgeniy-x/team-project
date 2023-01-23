@@ -3,6 +3,7 @@
 body {
     font-family: var(--font-main);
     font-weight: 400;
+    font-size: 12px;
     margin: 0 auto;
     background-image: url(../images/background/background_mobile.jpg);
 }
@@ -46,8 +47,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 p, h1, h2, h3, h4, h5, h6, button, ul {
-  margin: 0;
-  padding: 0;
   margin: 0;
   padding: 0;
   list-style: none;
