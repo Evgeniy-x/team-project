@@ -1,4 +1,5 @@
 .about-section {
+  position: relative;
   background-color: var(--color-backgraund);
 }
 
@@ -49,15 +50,15 @@
 .about-img {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 22px;
 
-  margin: 0 auto;
-  transform: translateY(-50%);
+  // margin: 0 auto;
+  // transform: translateY(-44px);
 }
 
 .about-btn {
   width: 164px;
-  background: var(--color-logo);
+  background: var(--color-brand);
   border-radius: 10px;
   font-style: normal;
   font-weight: 600;
@@ -68,12 +69,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 
   color: #000000;
 
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 0;
   margin: 0 auto;
+
+  transition: background 250ms var(--cubic-bezier);
+}
+
+.about-btn:hover {
+  background: #0a8817;
+}
+
+.about-btn:focus {
+  background: #0a8817;
+  color: var(--color-title);
+  fill: var(--color-title);
+  // outline: 2px solid transparent;
+}
+
+.about-btn:disabled {
+  background: #ababab;
 }
 
 // .about-btn-text {
@@ -139,4 +157,106 @@
 }
 
 @media screen and (min-width: 768px) {
+  .about-title-label {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+
+  .about-title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 72px;
+  }
+
+  .about-image-wrapper {
+    width: 330px;
+    height: 330px;
+    margin: 0;
+  }
+
+  .about-img {
+    top: 26px;
+    width: 330px;
+    height: 330px;
+  }
+
+  .about-text-wrapper {
+    // position: absolute;
+    // top: 222px;
+    // left: 400px;
+    text-align: start;
+
+    gap: 8px;
+    margin: 0;
+    padding-bottom: 32px;
+    padding-left: 5px;
+  }
+
+  .about-text {
+    text-align: left;
+  }
+
+  .about-content-wrapper {
+    position: absolute;
+    top: 222px;
+    left: 400px;
+    width: 336px;
+    height: 254px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .about-btn {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-title-label {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .about-title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  .about-image-wrapper {
+    width: 490px;
+    height: 490px;
+    margin: 0;
+  }
+
+  .about-img {
+    top: 39px;
+    width: 490px;
+    height: 490px;
+  }
+
+  .about-text-wrapper {
+    padding-bottom: 54px;
+  }
+
+  .about-text {
+    font-size: 16px;
+  }
+
+  .about-content-wrapper {
+    top: 326px;
+    left: 616px;
+    width: 463px;
+    height: 257px;
+  }
+
+  .about-desktoptext {
+    font-size: 14px;
+    line-height: 1.94;
+  }
 }
