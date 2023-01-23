@@ -41,6 +41,9 @@
   background-color: #d9d9d9;
   opacity: 1;
 }
+.swiper-pagination-bullet:hover {
+  cursor: url(../images/cursor.svg) ,pointer;
+}
 .swiper-pagination-bullet-active {
   background-color: var(--color-backgraund);
 }
