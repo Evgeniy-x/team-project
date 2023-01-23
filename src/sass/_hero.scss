@@ -9,13 +9,13 @@
 
    color: var(--color-title);
    font-family: var(--font-logo);
-   font-weight: 400;
+   font-weight: inherit;
    font-size: 26px;
    line-height: 1.27;
    letter-spacing: 0.04em;
    text-transform: uppercase;
 }
-.hero-title-passion {
+.hero-title_passion {
    font-size: 34px;
    line-height: 0.97;
 }
@@ -34,26 +34,28 @@
    border: 2px solid var(--color-logo);
    border-radius: 8px;
 }
-.hero-instruction-link {
+.hero-instruction-button {
+   width: 100px;
+   height: 24px;
+
+   background: none;
    color: var(--color-logo);
    font-weight: 600;
    font-size: 12px;
    line-height: 1.25;
    text-decoration-line: underline;
+   border: none;
 }
 
-@media screen and (max-width: 767px) {
-   .image-and-text-arrow,
-   .cafes-and-food-trucks {
-      display: none;
-   }
+.hero-plate-image-and-text-with-arrow,
+.hero-cafes-and-food-trucks {
+   display: none;
 }
-@media screen and (max-width: 479px) {
-   .hero-trio-ice-image {
-      width: 177px;
-      margin-left: auto;
-      margin-right: auto;
-   }
+
+.hero-trio-image {
+   margin-left: auto;
+   margin-right: auto;
+   background-color: inherit;
 }
 
 @media screen and (min-width: 480px) {
@@ -65,11 +67,10 @@
    .hero-products-button {
       margin-bottom: 0;
    }
-   .hero-trio-ice-image {
+   .hero-trio-image {
       position: absolute;
       right: 20px;
       bottom: 0;
-      width: 218px;
    }
 }
 
@@ -84,29 +85,38 @@
    .hero-products-button {
       margin-bottom: 12px;
    }
-   .image-and-text-arrow {
+   .hero-instruction-button {
+      width: 114px;
+   }
+   .hero-plate-image-and-text-with-arrow {
       display: flex;
       align-items: center;
       column-gap: 32px;
    }
-   .hero-trio-ice-image {
+   .hero-trio-image {
       right: 92px;
       bottom: 0;
-      width: 268px;
    }
    .hero-text {
       width: 139px;
+      margin-bottom: 12px;
+
       color: var(--color-title);
-      font-weight: 400;
       font-size: 12px;
       line-height: 1.42;
    }
-   .cafes-and-food-trucks {
+   .hero-arrow {
+      width: 40px;
+      height: 16px;
+      fill: var(--color-title);
+   }
+   .hero-cafes-and-food-trucks {
+      display: block;
       position: absolute;
       right: 32px;
       top: 28px;
    }
-   .cafes-box {
+   .hero-cafes-box {
       margin-bottom: 20px;
    }
    .hero-numbers {
@@ -121,10 +131,58 @@
    }
    .hero-numbers-title {
       color: var(--color-title);
-      font-weight: 400;
       font-size: 8px;
       line-height: 1.25;
       text-align: right;
-      letter-spacing: 0.04em;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .hero {
+      padding-top: 45px;
+      padding-bottom: 65px;
+   }
+   .hero-title {
+      width: 367px;
+      font-size: 38px;
+      line-height: 1.26;
+      margin-bottom: 28px;
+   }
+   .hero-title_passion {
+      font-size: inherit;
+   }
+   .hero-products-button {
+      width: 134px;
+      height: 42px;
+      margin-bottom: 42px;
+   }
+   .hero-instruction-button {
+      width: 154px;
+      height: 40px;
+   }
+   .hero-plate-image-and-text-with-arrow {
+      column-gap: 16px;
+   }
+   .hero-text {
+      width: 200px;
+      margin-bottom: 24px;
+
+      font-size: 14px;
+      line-height: 1.43;
+   }
+   .hero-cafes-and-food-trucks {
+      right: 16px;
+      top: 53px;
+   }
+   .hero-cafes-box {
+      margin-bottom: 16px;
+   }
+   .hero-numbers {
+      font-size: 46px;
+      line-height: 1.22;
+   }
+   .hero-numbers-title {
+      font-size: 14px;
+      line-height: 1.21;
    }
 }

@@ -3,31 +3,55 @@
       <!-- hero-title -->
       <h1 class="hero-title">ice cream
          made with
-         <span class="hero-title-passion">passion</span>
+         <span class="hero-title_passion">passion</span>
       </h1>
       <button href="#products" class="hero-products-button">Products</button>
-      <a href="#advantages" class="hero-instruction-link">How it`s made?</a>
-      <!-- image + text-arrow -->
-      <div class="image-and-text-arrow">
-         <img src="#" alt="many tasty ice-cream" width="152" height="152">
-         <div class="text-arrow">
+      <button href="#advantages" class="hero-instruction-button">How it’s made?</button>
+
+      <!-- plate-image + text with arrow -->
+      <div class="hero-plate-image-and-text-with-arrow">
+
+         <picture>
+            <source srcset="./images/hero/plate-desktop.png, ./images/hero/plate-desktop@2x.png 2x"
+               media="(min-width: 1200px)" top="300" />
+            <img srcset="./images/hero/plate-tablet@2x.png 2x" src="./images/hero/plate-tablet.png"
+               alt="trio ice-cream on a plate" />
+         </picture>
+
+         <div class="hero-text-with-arrow">
+
             <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                incididunt ut labore et</p>
-            <img src="#" alt="SVG" width="40">
+            <svg class="hero-arrow">
+               <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+
          </div>
       </div>
-      <!-- це буде position-absolute відносно hero-контейнера-->
-      <div class="cafes-and-food-trucks">
-         <div class="cafes-box">
+      <!-- це буде завжди position-absolute відносно hero-контейнера-->
+      <div class="hero-cafes-and-food-trucks">
+
+         <div class="hero-cafes-box">
             <p class="hero-numbers">16</p>
             <p class="hero-numbers-title">cafes</p>
          </div>
-         <div class="food-trucks-box">
+         <div class="hero-food-trucks-box">
             <p class="hero-numbers">23</p>
             <p class="hero-numbers-title">food trucks</p>
          </div>
+
       </div>
-      <!-- від media 480px ця картинка стане абсолютом -->
-      <img class="hero-trio-ice-image" src="#" alt="Ice cream in a waffle cup">
+      <!-- від media 480px картинка з тройним морозивом стане абсолютом -->
+      <picture>
+         <source srcset="./images/hero/trio-desktop.png, ./images/hero/trio-desktop@2x.png 2x"
+            media="(min-width: 1200px)" />
+         <source srcset="./images/hero/trio-tablet.png, ./images/hero/trio-tablet@2x.png 2x"
+            media="(min-width: 768px)" />
+         <source srcset="./images/hero/trio-mobile-480.png, ./images/hero/trio-mobile-480@2x.png 2x"
+            media="(min-width: 480px)" />
+
+         <img srcset="./images/hero/trio-mobile-320@2x.png 2x" src="./images/hero/trio-mobile-320.png"
+            class="hero-trio-image" alt="trio icecream in a glass" />
+      </picture>
    </div>
 </section>

@@ -21,15 +21,15 @@
 }
 .customer-body {
   padding: 35px 39px;
-  background-color: #84a178;
+  background-color: var(--color-backgraund);
   font-size: 12px;
-  color: #fcfcfc;
+  color: var(--color-title);
   line-height: 2.55;
   border-radius: 10px;
   margin-bottom: 32px;
 }
 .customer-author {
-  color: #131313;
+  color: var(--color-text);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.86;
@@ -41,8 +41,11 @@
   background-color: #d9d9d9;
   opacity: 1;
 }
+.swiper-pagination-bullet:hover {
+  cursor: url(../images/cursor.svg) ,pointer;
+}
 .swiper-pagination-bullet-active {
-  background-color: #84a178;
+  background-color: var(--color-backgraund);
 }
 
 @media screen and (min-width: 768px) {
