@@ -23,19 +23,16 @@
     top: 0 ;
     height: 100vh;
     z-index: 1000;
-    left: 2000px;
+    left: 0;
     transition: left 0.3s ease-in-out;
-    overflow: hidden;
 }
 
 .icon-close-btn {
     fill: var(--color-title);
 }
-.is-hidden {
-   left: 0;
-   
+.mobile-menu.is-hidden {
+   left: 2000px;
 }
-
 .mobile-menu-list {
     text-align: center;
     margin-top: 100px;
@@ -100,6 +97,7 @@
     .menu {
         display: none;
     }
+
 }
 @media screen and (min-width: 768px) {
     .mobile-button {
