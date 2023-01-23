@@ -58,7 +58,7 @@
     fill: var(--color-backgraund); 
     transform: scale(1); 
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    transition-timing-function: var(--cubic-bezier); 
 } 
 
 .footer-socitem {
@@ -90,7 +90,7 @@
     font-size: 12px; 
     line-height: 186%;
     text-align: right; 
-    color: #131313; 
+    color: var(--color-text); 
 } 
 
 
@@ -100,7 +100,7 @@
     font-size: 12px; 
     line-height: 186%;
     text-align: right; 
-    color: var(--color-text); 
+    color: var(--color-title); 
 } 
 
 
