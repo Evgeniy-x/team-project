@@ -160,10 +160,7 @@
     height: 16px;
     padding: 0;
 
-    transform: translatex(0);
-    transition-property: transform;
-    transition-duration: 300ms;
-    transition-timing-function: cubic-bezier(0.4, -0.74, 0.48, 1.53);
+    transition: transform .3s cubic-bezier(.4, -.74, .48, 1.53);
 }
     
 .products-card-btn:hover,
