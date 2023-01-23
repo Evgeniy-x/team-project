@@ -1,3 +1,4 @@
+// Загальний клас для секції 'hero'
 .align-center {
    display: inline-flex;
    justify-content: center;
@@ -7,6 +8,9 @@
 .hero {
    padding-top: 50px;
    background-color: var(--color-backgraund-dark);
+}
+.hero-container {
+   position: relative;
 }
 
 .hero-title {
@@ -65,17 +69,14 @@
    width: 100%;
    height: 50px;
    background: url(../images/hero/dots-mobile-320.png);
-   left: 0%;
-   top: 0;
+   bottom: 0;
+   left: 0;
 }
 
 @media screen and (min-width: 480px) {
    .hero {
       padding-top: 40px;
       padding-bottom: 150;
-   }
-   .hero-container {
-      position: relative;
    }
    .hero-products-button {
       margin-bottom: 0;
