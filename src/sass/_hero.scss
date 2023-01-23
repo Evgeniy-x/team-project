@@ -104,7 +104,13 @@
       font-size: 12px;
       line-height: 1.42;
    }
+   .hero-arrow {
+      width: 40px;
+      height: 16px;
+      fill: var(--color-title);
+   }
    .cafes-and-food-trucks {
+      display: block;
       position: absolute;
       right: 32px;
       top: 28px;
@@ -147,10 +153,6 @@
    .hero-instruction-button {
       width: 154px;
       height: 40px;
-   }
-   .hero-trio-image {
-      right: 20px;
-      bottom: 0;
    }
    .hero-plate-image-and-text-with-arrow {
       column-gap: 16px;
