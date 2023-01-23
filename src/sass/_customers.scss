@@ -44,6 +44,9 @@
 .swiper-pagination-bullet:hover {
   cursor: url(../images/cursor.svg) ,pointer;
 }
+.swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active) {
+  background-color: var(--color-brand);
+}
 .swiper-pagination-bullet-active {
   background-color: var(--color-backgraund);
 }
