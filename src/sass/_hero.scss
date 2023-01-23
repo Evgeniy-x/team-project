@@ -61,16 +61,16 @@
 }
 
 .hero-trio-image {
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 83px;
+   margin-right: 60px;
 }
 .hero-dots-image {
    position: absolute;
-   width: 100%;
-   height: 50px;
-   background: url(../images/hero/dots-mobile-320.png);
    bottom: 0;
    left: 0;
+   width: 320px;
+   height: 50px;
+   background: url(../images/hero/dots-mobile-320.png);
 }
 
 @media screen and (min-width: 480px) {
@@ -85,6 +85,12 @@
       position: absolute;
       right: 20px;
       bottom: -150px;
+   }
+   .hero-dots-image {
+      height: 50px;
+      background: url(../images/hero/dots-mobile-320.png);
+      bottom: 0;
+      left: 0;
    }
 }
 
