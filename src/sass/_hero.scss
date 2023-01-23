@@ -9,12 +9,13 @@
 
    color: var(--color-title);
    font-family: var(--font-logo);
+   font-weight: inherit;
    font-size: 26px;
    line-height: 1.27;
    letter-spacing: 0.04em;
    text-transform: uppercase;
 }
-.hero-title-passion {
+.hero-title_passion {
    font-size: 34px;
    line-height: 0.97;
 }
@@ -146,6 +147,9 @@
       font-size: 38px;
       line-height: 1.26;
       margin-bottom: 28px;
+   }
+   .hero-title_passion {
+      font-size: 38px;
    }
    .hero-products-button {
       width: 134px;
