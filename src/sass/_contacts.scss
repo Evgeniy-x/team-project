@@ -127,11 +127,28 @@
 .cont-btn-one:hover {
     background: #0A8817;
     border-radius: 10px;
+    
 }
 
 .cont-btn-two:hover {
     border: 2px solid #0A8817;
     border-radius: 10px;
+}
+
+.cont-btn-one:focus {
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    background: #0A8817;
+    border-radius: 10px;
+    outline: none;
+}
+
+.cont-btn-two:focus {
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    border: 2px solid #0A8817;
+    border-radius: 10px;
+    outline: none;
 }
 
 .cont-btn-one {
