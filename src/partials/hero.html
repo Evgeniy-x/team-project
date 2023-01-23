@@ -1,16 +1,16 @@
 <section class="hero">
    <div class="hero-container container">
+
       <!-- hero-title -->
       <h1 class="hero-title">ice cream
          made with
          <span class="hero-title_passion">passion</span>
       </h1>
-      <button href="#products" class="hero-products-button">Products</button>
-      <button href="#advantages" class="hero-instruction-button">How it’s made?</button>
+      <a href="https://www.google.com" class="hero-products-button align-center">Products</a>
+      <a href="https://www.google.com" class="hero-instruction-button align-center">How it’s made?</a>
 
       <!-- plate-image + text with arrow -->
       <div class="hero-plate-image-and-text-with-arrow">
-
          <picture>
             <source srcset="./images/hero/plate-desktop.png, ./images/hero/plate-desktop@2x.png 2x"
                media="(min-width: 1200px)" top="300" />
@@ -19,28 +19,14 @@
          </picture>
 
          <div class="hero-text-with-arrow">
-
             <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                incididunt ut labore et</p>
             <svg class="hero-arrow">
                <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
-
          </div>
       </div>
-      <!-- це буде завжди position-absolute відносно hero-контейнера-->
-      <div class="hero-cafes-and-food-trucks">
 
-         <div class="hero-cafes-box">
-            <p class="hero-numbers">16</p>
-            <p class="hero-numbers-title">cafes</p>
-         </div>
-         <div class="hero-food-trucks-box">
-            <p class="hero-numbers">23</p>
-            <p class="hero-numbers-title">food trucks</p>
-         </div>
-
-      </div>
       <!-- від media 480px картинка з тройним морозивом стане абсолютом -->
       <picture>
          <source srcset="./images/hero/trio-desktop.png, ./images/hero/trio-desktop@2x.png 2x"
@@ -53,5 +39,17 @@
          <img srcset="./images/hero/trio-mobile-320@2x.png 2x" src="./images/hero/trio-mobile-320.png"
             class="hero-trio-image" alt="trio icecream in a glass" />
       </picture>
+
+      <!-- цифри та їх заголовок завжди будуть position-absolute відносно hero-контейнера-->
+      <div class="hero-cafes-and-food-trucks">
+         <div class="hero-cafes-box">
+            <p class="hero-numbers">16</p>
+            <p class="hero-numbers-title">cafes</p>
+         </div>
+         <div class="hero-food-trucks-box">
+            <p class="hero-numbers">23</p>
+            <p class="hero-numbers-title">food trucks</p>
+         </div>
+      </div>
    </div>
 </section>
