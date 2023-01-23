@@ -1,0 +1,79 @@
+.modal-made {
+    opacity: 0;
+    visibility: hidden;
+  
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 280px;
+    padding: 28px;
+    border: 2px solid var(--color-brand);
+    border-radius: 10px;
+    background-color: var(--color-title);
+}
+
+.modal-made-header {
+    font-family: var(--font-logo);
+    font-size: 20px;
+    line-height: 1.4;
+    color: #131313;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.modal-made-iframe {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    height: 199px;
+    width: 224px;
+}
+
+.modal-made-text {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.modal-made.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.made-button-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 0;
+}
+
+@media screen and (min-width: 768px) {
+        
+    .modal-made {
+        top: 50%;
+        width: 568px;
+        padding: 32px 60px;
+    }
+
+    .iframe-youtube {
+        width: 448px;
+        height: 205px;
+    }
+}
