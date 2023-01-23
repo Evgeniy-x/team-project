@@ -48,7 +48,7 @@
 }
 
 .hero-plate-image-and-text-with-arrow,
-.cafes-and-food-trucks {
+.hero-cafes-and-food-trucks {
    display: none;
 }
 
@@ -110,13 +110,13 @@
       height: 16px;
       fill: var(--color-title);
    }
-   .cafes-and-food-trucks {
+   .hero-cafes-and-food-trucks {
       display: block;
       position: absolute;
       right: 32px;
       top: 28px;
    }
-   .cafes-box {
+   .hero-cafes-box {
       margin-bottom: 20px;
    }
    .hero-numbers {
@@ -170,11 +170,19 @@
       font-size: 14px;
       line-height: 1.43;
    }
-   .cafes-and-food-trucks {
+   .hero-cafes-and-food-trucks {
       right: 16px;
       top: 53px;
    }
-   .cafes-box {
+   .hero-cafes-box {
       margin-bottom: 16px;
+   }
+   .hero-numbers {
+      font-size: 46px;
+      line-height: 1.22;
+   }
+   .hero-numbers-title {
+      font-size: 14px;
+      line-height: 1.21;
    }
 }
