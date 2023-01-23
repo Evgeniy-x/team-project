@@ -25,14 +25,17 @@
     top: 0 ;
     height: 100vh;
     z-index: 1000;
-    box-shadow: 0 0 100 500 rgba(132, 161, 120, 1);
+    left: 2000px;
+    transition: left 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .icon-close-btn {
     fill: var(--color-title);
 }
 .is-hidden {
-    display: none;
+   left: 0;
+   
 }
 
 .mobile-menu-list {
@@ -71,6 +74,13 @@
     width: 152px;
     margin: 114px auto;
     position: relative;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #0A8817;
+    color: #FCFCFC;
 }
 
 .button-arrow {
