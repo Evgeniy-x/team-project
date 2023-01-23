@@ -107,6 +107,13 @@
       line-height: 1.42;
    }
    .hero-arrow {
+      display: block;
+      transition: transform .3s cubic-bezier(.4, -.74, .48, 1.53)
+   }
+   .hero-arrow:hover {
+      transform: translateX(10px);
+   }
+   .hero-arrow-icon {
       width: 40px;
       height: 16px;
       fill: var(--color-title);
