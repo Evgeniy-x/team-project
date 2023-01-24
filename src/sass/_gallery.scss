@@ -1,0 +1,34 @@
+ @media screen and (max-width:320px),
+ (max-width:480px) {
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.mySwiper {
+    top: -36px;
+    border-radius: 8px;
+}
+ }
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    }
+.mySwiper {
+    position: relative;
+    top: -36px;
+    border-radius: 8px;
+}
+}
+@media screen and (min-width:1200px) {
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.gallery-slide {
+    margin: 0 auto;
+    border-radius: 24px;
+}
+}
