@@ -11,7 +11,7 @@
 }
 
 .logo-icon {
-    height:40;
+    height:40px;
     width: 37px;
 }
 
@@ -45,13 +45,14 @@
 .mobile-menu-link {
     font-weight: 700;
     font-size: 32px;
-    line-height: 39px;
-    color: var(--color-title);
+    line-height: 1.2;
+    color: var(--color-brand);
+    
     transition: color 0.3s ease-in-out;
 }
 
 .mobile-menu-link:focus {
-    color: var(--color-text);
+    color: var(--color-title);
 }
 
 .button {
@@ -72,18 +73,17 @@
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.button:hover,
-.button:focus {
+
+.button:hover { 
     background-color: #0A8817;
-    color: #FCFCFC;
 }
+
 
 .button-arrow {
     position: absolute;
     top: 50%;
     right: 30px;
     transform: translateY(-50%);
-
 }
 .menu-button-desctop {
     display: none;
@@ -97,6 +97,8 @@
     .menu {
         display: none;
     }
+
+
 
 }
 @media screen and (min-width: 768px) {
@@ -151,13 +153,13 @@
     .menu-link {
         font-weight: 700;
         font-size: 16px;
-        line-height: 20px;
-        color: #FCFCFC;
+        line-height: 1.25;
+        color: var(--color-brand);
         transition: color 0.3s ease-in-out;
     }
     .menu-link:focus,
     .menu-link:hover {
-        color: #F8D24E;
+        color: #0A8817;
     }
     
 }
