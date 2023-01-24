@@ -15,7 +15,7 @@
     border-radius: 10px;
     background-color: var(--color-title);
     text-align: center;
-    transition: opacity 350ms var(---cubic-bezier);
+    transition: opacity 350ms var(---cubic-bezier), visibility 350ms var(---cubic-bezier);
 }
 
 .modal-made-header,
@@ -23,7 +23,7 @@
     font-family: var(--font-logo);
     font-size: 20px;
     line-height: 1.4;
-    color: #131313;
+    color: var(--color-text);
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
@@ -70,10 +70,11 @@
     border: 0;
 }
 
-.modal-map-button {
+.modal-map-link {
     display: inline-block;
     padding: 16px 32px;
     background-color: var(--color-brand);
+    color: var(--color-text);
     border-radius: 10px;
     font-weight: 600;
 }

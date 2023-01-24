@@ -9,7 +9,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  transition: all 350ms var(---cubic-bezier);
+  transition: opacity 350ms var(---cubic-bezier), visibility 350ms var(---cubic-bezier);
 }
 
 /*================= MODAL WINDOW =================*/
@@ -40,7 +40,7 @@
   padding-top: 28px;
   border-radius: 3px;
   background-color: #fff;
-  transition: 0.3s all;
+  transition: opacity 3500ms var(---cubic-bezier), visibility 3500ms var(---cubic-bezier);
 }
 
 .modal-ingredients.active,
