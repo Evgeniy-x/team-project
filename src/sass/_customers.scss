@@ -1,3 +1,6 @@
+.customers {
+  margin-bottom: 50px;
+}
 .customers-swiper {
   width: 100%;
   max-width: 280px;
@@ -51,6 +54,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .customers {
+    margin-bottom: 70px;
+  }
   .customers-swiper {
     max-width: 705px;
   }
@@ -61,6 +67,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .customers{
+    margin-bottom: 90px;
+  }
   .customers-swiper {
     max-width: 968px;
   }
