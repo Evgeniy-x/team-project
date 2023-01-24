@@ -68,7 +68,7 @@
 }
 .hero-dots-image {
    position: absolute;
-   left: 0;
+   right: 0;
    bottom: -237px;
 
    width: 320px;
@@ -154,6 +154,7 @@ screen and (min-resolution: 2dppx) {
       bottom: -12px;
    }
    .hero-dots-image {
+      bottom: -12px;
       width: 768px;
       height: 68px;
       background: url(../images/hero/dots-tablet.png);
