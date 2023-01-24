@@ -32,6 +32,10 @@
   margin-bottom: 32px;
 }
 
+.about-pic-wrapper {
+  padding-bottom: 22px;
+}
+
 .about-image-wrapper {
   position: relative;
   background: linear-gradient(
@@ -121,16 +125,17 @@
   letter-spacing: 0.04em;
 
   color: #fcfcfc;
+
+  margin-bottom: 4px;
 }
 
 .about-text-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
   // outline: 1px solid tomato;
   margin-left: 30px;
   margin-right: 30px;
-  padding-top: 62px;
+  padding-top: 40px;
   justify-content: center;
 }
 
