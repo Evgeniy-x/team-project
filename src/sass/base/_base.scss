@@ -47,10 +47,16 @@ screen and (min-resolution: 2dppx) {
     cursor: url(../images/cursor.svg) ,pointer;
 }
 
-p, h1, h2, h3, h4, h5, h6, button, ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+p, h1, h2, h3, h4, h5, h6, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 img {
