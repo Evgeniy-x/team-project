@@ -1,3 +1,6 @@
+.customers {
+  margin-bottom: 50px;
+}
 .customers-swiper {
   width: 100%;
   max-width: 280px;
@@ -22,7 +25,6 @@
 .customer-body {
   padding: 35px 39px;
   background-color: var(--color-backgraund);
-  font-size: 12px;
   color: var(--color-title);
   line-height: 2.55;
   border-radius: 10px;
@@ -44,11 +46,17 @@
 .swiper-pagination-bullet:hover {
   cursor: url(../images/cursor.svg) ,pointer;
 }
+.swiper-pagination-bullet:hover:not(.swiper-pagination-bullet-active) {
+  background-color: var(--color-brand);
+}
 .swiper-pagination-bullet-active {
   background-color: var(--color-backgraund);
 }
 
 @media screen and (min-width: 768px) {
+  .customers {
+    margin-bottom: 70px;
+  }
   .customers-swiper {
     max-width: 705px;
   }
@@ -59,6 +67,9 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .customers{
+    margin-bottom: 90px;
+  }
   .customers-swiper {
     max-width: 968px;
   }
