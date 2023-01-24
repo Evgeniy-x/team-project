@@ -7,6 +7,7 @@
 
 .hero {
    padding-top: 50px;
+   padding-bottom: 237px;
    background-color: var(--color-backgraund-dark);
 }
 .hero-container {
@@ -34,7 +35,6 @@
    width: 108px;
    height: 38px;
    margin-right: 12px;
-   margin-bottom: 19px;
 
    color: #000;
    font-weight: 600;
@@ -61,16 +61,26 @@
 }
 
 .hero-trio-image {
-   margin-left: 83px;
-   margin-right: 60px;
+   position: absolute;
+   z-index: 1;
+   right: 60px;
+   bottom: -237px;
 }
 .hero-dots-image {
    position: absolute;
-   bottom: 0;
    left: 0;
+   bottom: -237px;
+
    width: 320px;
    height: 50px;
    background: url(../images/hero/dots-mobile-320.png);
+}
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+   .hero-dots-image {
+      background-image: url(../images/hero/dots-mobile-320@2x.png);
+   }
 }
 
 @media screen and (min-width: 480px) {
@@ -82,15 +92,21 @@
       margin-bottom: 0;
    }
    .hero-trio-image {
-      position: absolute;
       right: 20px;
       bottom: -150px;
    }
    .hero-dots-image {
-      height: 50px;
-      background: url(../images/hero/dots-mobile-320.png);
-      bottom: 0;
-      left: 0;
+      bottom: -150px;
+      width: 330px;
+      height: 52px;
+      background: url(../images/hero/dots-mobile-480.png);
+   }
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-dots-image {
+         background-image: url(../images/hero/dots-mobile-480@2x.png);
+      }
    }
 }
 
@@ -136,6 +152,18 @@
    .hero-trio-image {
       right: 92px;
       bottom: -12px;
+   }
+   .hero-dots-image {
+      width: 768px;
+      height: 68px;
+      background: url(../images/hero/dots-tablet.png);
+   }
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-dots-image {
+         background-image: url(../images/hero/dots-tablet@2x.png);
+      }
    }
    .hero-cafes-and-food-trucks {
       display: block;
@@ -199,6 +227,20 @@
    }
    .hero-trio-image {
       bottom: -65px;
+   }
+   .hero-dots-image {
+      right: 0;
+      bottom: -65px;
+      width: 1200px;
+      height: 383px;
+      background: url(../images/hero/dots-desktop.png);
+   }
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-dots-image {
+         background-image: url(../images/hero/dots-desktop@2x.png);
+      }
    }
    .hero-cafes-and-food-trucks {
       right: 16px;
