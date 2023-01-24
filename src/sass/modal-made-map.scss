@@ -17,7 +17,7 @@
     background-color: var(--color-title);
     // text-align: center;
     margin: 0 auto;
-    transition: opacity 350ms var(---cubic-bezier), visibility 350ms var(---cubic-bezier);
+    transition: opacity 3500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 3500ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
