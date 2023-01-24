@@ -11,7 +11,7 @@
 }
 
 .logo-icon {
-    height:40;
+    height:40px;
     width: 37px;
 }
 
@@ -45,7 +45,7 @@
 .mobile-menu-link {
     font-weight: 700;
     font-size: 32px;
-    line-height: 39px;
+    line-height: 1.2;
     color: var(--color-brand);
     
     transition: color 0.3s ease-in-out;
@@ -153,7 +153,7 @@
     .menu-link {
         font-weight: 700;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         color: var(--color-brand);
         transition: color 0.3s ease-in-out;
     }
