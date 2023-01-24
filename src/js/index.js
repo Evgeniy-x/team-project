@@ -28,6 +28,43 @@ document.addEventListener('DOMContentLoaded', function () {
         el: '.swiper-pagination',
         clickable: true,
       },
+
+      keyboard: {
+      enable: true,
+      onlyInViewpot: true,
+      pageUpDown: true
+      },
+
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          
+        },
+        1200: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1440: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+      },
+
+       // animation speed
+      speed: 500,
+      // slide' or 'fade' or 'cube' or 'coverflow' or 'flip'
+      effect: 'slide',
+      
     });
   })();
 });
