@@ -78,7 +78,7 @@
    transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
 }
 .hero-trio-image:hover {
-   transform: scale(1.1);
+   transform: scale(1.05);
 }
 .hero-dots-image {
    position: absolute;
@@ -147,10 +147,10 @@ screen and (min-resolution: 2dppx) {
    .hero-plate-image {
       // щоб жовті точки не заходили на тарілку
       z-index: 1;
-      transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
+      transition: transform 500ms cubic-bezier(.4, -.74, .48, 1.53);
    }
    .hero-plate-image:hover {
-      transform: scale(1.1);
+      transform: rotate(180deg);
    }
    .hero-text-with-arrow {
       margin-top: 40px;
