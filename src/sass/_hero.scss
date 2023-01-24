@@ -36,23 +36,32 @@
    height: 38px;
    margin-right: 12px;
 
-   color: #000;
+   color: inherit;
    font-weight: 600;
-   font-size: 12px;
    line-height: 1.25;
    border: 2px solid var(--color-brand);
    border-radius: 8px;
+   transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53), border-color 350ms cubic-bezier(.4, -.74, .48, 1.53);
 }
+.hero-products:hover {
+   transform: scale(1.1);
+   border-color: #0A8817;
+}
+
 .hero-instruction {
    width: 100px;
    height: 24px;
 
    color: var(--color-brand);
    font-weight: 600;
-   font-size: 12px;
    line-height: 1.25;
    text-decoration-line: underline;
    border: none;
+   transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53), color 350ms cubic-bezier(.4, -.74, .48, 1.53);
+}
+.hero-instruction:hover {
+   transform: scale(1.1);
+   color: rgb(232, 85, 232);
 }
 
 .hero-plate-image-and-text-with-arrow,
@@ -62,12 +71,18 @@
 
 .hero-trio-image {
    position: absolute;
+   // щоб жовті точки не заходили на картинку (морозиво в стаканчику)
    z-index: 1;
    right: 60px;
    bottom: -237px;
+   transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
+}
+.hero-trio-image:hover {
+   transform: scale(1.1);
 }
 .hero-dots-image {
    position: absolute;
+   pointer-events: none;
    right: 0;
    bottom: -237px;
 
@@ -129,24 +144,32 @@ screen and (min-resolution: 2dppx) {
       align-items: center;
       column-gap: 32px;
    }
-   .hero-plate-picture {
+   .hero-plate-image {
       // щоб жовті точки не заходили на тарілку
       z-index: 1;
+      transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
+   }
+   .hero-plate-image:hover {
+      transform: scale(1.1);
+   }
+   .hero-text-with-arrow {
+      margin-top: 40px;
    }
    .hero-text {
       width: 139px;
       margin-bottom: 12px;
 
       color: var(--color-title);
-      font-size: 12px;
       line-height: 1.42;
    }
    .hero-arrow {
       display: block;
-      transition: transform .3s cubic-bezier(.4, -.74, .48, 1.53)
+      transition: transform 300ms cubic-bezier(.4, -.74, .48, 1.53), fill 300ms cubic-bezier(.4, -.74, .48, 1.53);
    }
-   .hero-arrow:hover {
+   .hero-arrow:hover,
+   .hero-arrow:focus {
       transform: translateX(10px);
+      fill: #0A8817;
    }
    .hero-arrow-icon {
       width: 40px;
@@ -182,12 +205,16 @@ screen and (min-resolution: 2dppx) {
    .hero-numbers {
       margin-bottom: 4px;
 
-      color: var(--color-text);
       font-weight: 900;
       font-size: 28px;
       line-height: 1.21;
       text-align: right;
       letter-spacing: 0.04em;
+      transition: transform 550ms cubic-bezier(.4, -.74, .48, 1.53);
+   }
+   .hero-cafes-box:hover .hero-numbers,
+   .hero-food-trucks-box:hover .hero-numbers {
+      transform: rotate(360deg);
    }
    .hero-numbers-title {
       color: var(--color-title);
@@ -219,6 +246,10 @@ screen and (min-resolution: 2dppx) {
       font-size: 14px;
       line-height: 1.29;
    }
+   .hero-products:focus {
+      border-color: #0A8817;
+      color: var(--color-title);
+   }
    .hero-instruction {
       width: 154px;
       height: 40px;
@@ -229,7 +260,7 @@ screen and (min-resolution: 2dppx) {
    .hero-plate-image-and-text-with-arrow {
       column-gap: 16px;
    }
-   .hero-plate-picture {
+   .hero-plate-image {
       // ставим по дефолтну, так як на десктопі ця властивість не потрібна
       z-index: auto;
    }
