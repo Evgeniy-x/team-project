@@ -6,14 +6,15 @@
          made with
          <span class="hero-title_passion">passion</span>
       </h1>
-      <a href="#products" class="hero-products-button align-center">Products</a>
-      <a href="https://www.google.com" class="hero-instruction-button align-center js-open-modal" data-modal="3">How it’s made?</a>
+      <a href="#products" class="hero-products align-center">Products</a>
+      <a href="https://www.google.com" class="hero-instruction align-center js-open-modal" data-modal="3">How
+         it’s made?</a>
 
       <!-- plate-image + text with arrow -->
       <div class="hero-plate-image-and-text-with-arrow">
-         <picture>
+         <picture class="hero-plate-image">
             <source srcset="./images/hero/plate-desktop.png, ./images/hero/plate-desktop@2x.png 2x"
-               media="(min-width: 1200px)" top="300" />
+               media="(min-width: 1200px)" />
             <img srcset="./images/hero/plate-tablet@2x.png 2x" src="./images/hero/plate-tablet.png"
                alt="trio ice-cream on a plate" />
          </picture>
@@ -42,6 +43,9 @@
             class="hero-trio-image" alt="trio icecream in a glass" />
       </picture>
 
+      <!-- крапочки завжди будуть position-absolute відносно hero-контейнера-->
+      <div class="hero-dots-image"></div>
+
       <!-- цифри та їх заголовок завжди будуть position-absolute відносно hero-контейнера-->
       <div class="hero-cafes-and-food-trucks">
          <div class="hero-cafes-box">
@@ -54,7 +58,5 @@
          </div>
       </div>
 
-      <!-- крапочки завжди будуть position-absolute відносно hero-контейнера-->
-      <div class="hero-dots-image"></div>
    </div>
 </section>
