@@ -129,7 +129,7 @@ screen and (min-resolution: 2dppx) {
       align-items: center;
       column-gap: 32px;
    }
-   .hero-plate-image {
+   .hero-plate-picture {
       // щоб жовті точки не заходили на тарілку
       z-index: 1;
    }
@@ -215,13 +215,23 @@ screen and (min-resolution: 2dppx) {
       width: 134px;
       height: 42px;
       margin-bottom: 42px;
+
+      font-size: 14px;
+      line-height: 1.29;
    }
    .hero-instruction {
       width: 154px;
       height: 40px;
+
+      font-size: 14px;
+      line-height: 1.21;
    }
    .hero-plate-image-and-text-with-arrow {
       column-gap: 16px;
+   }
+   .hero-plate-picture {
+      // ставим по дефолтну, так як на десктопі ця властивість не потрібна
+      z-index: auto;
    }
    .hero-text {
       width: 200px;
