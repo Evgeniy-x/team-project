@@ -77,18 +77,20 @@
   padding: 12px 0;
   margin: 0 auto;
 
-  transition: background 250ms var(--cubic-bezier);
+  transition: background 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
 .about-btn:hover {
   background: #0a8817;
+  color: #000000;
 }
 
 .about-btn:focus {
   background: #0a8817;
   color: var(--color-title);
   fill: var(--color-title);
-  // outline: 2px solid transparent;
+  outline: 2px solid transparent;
 }
 
 .about-btn:disabled {
