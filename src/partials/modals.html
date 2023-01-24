@@ -2,19 +2,21 @@
   <div class="modal-ingredients modal-js" data-modal="1">
     <h2 class="modal__title">Chololate icecream</h2>
     <button type="button" class="modal-winwod-close-btn js-modal-close">
-        <svg class="modal-winwod-close-btn-icon" width="13" height="12">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
+      <svg class="modal-winwod-close-btn-icon" width="13" height="12">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
     </button>
     <div class="img-wrapper">
       <img
-        srcset="./images/modal/modal-iceCream-chocolate.jpg 1x,
-                ./images/modal/modal-iceCream-chocolate@2x.jpg 2x"
-
+        srcset="
+          ./images/modal/modal-iceCream-chocolate.jpg    1x,
+          ./images/modal/modal-iceCream-chocolate@2x.jpg 2x
+        "
         src="./images/modal/modal-iceCream-chocolate.jpg"
         alt="Chololate icecream"
         width="132"
-        class="product-photo"/>
+        class="product-photo"
+      />
     </div>
     <ul class="ice-cream-ingredients-list">
       <li class="ice-cream-ingredients-list-item">
@@ -92,69 +94,150 @@
   </div>
 
   <!-- МОДАЛКА BUY NOW -->
+
   <div class="modal-buy modal-js" data-modal="2">
+    <b class="modal-buy-mow-header">Buy now</b>
+    <button type="button" class="modal-window-close-btn js-modal-close">
+      <svg class="modal-window-close-btn-icon" width="13px" height="12px">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="modal-window-purchase">
+      <li class="modal-window-purchase-item green">
+        <div class="buy-now-item-wrapper ice-cream-wrapper">
+          <img
+            srcset="
+              ./images/modal/modal-coffe.jpg    1x,
+              ./images/modal/modal-coffe@2x.jpg 2x
+            "
+            src="./images/modal/modal-coffe.jpg"
+            alt="Ice Cream"
+            width="132px"
+            class="modal-window-purchase-item-photo"
+          />
+        </div>
+        <div class="product-name-buy-now">ice cream</div>
+      </li>
+      <li class="modal-window-purchase-item yellow">
+        <div class="buy-now-item-wrapper ice-coffee-wrapper">
+          <img
+            srcset="
+              ./images/modal/modal-iceCream.jpg    1x,
+              ./images/modal/modal-iceCream@2x.jpg 2x
+            "
+            src="./images/modal/modal-iceCream.jpg"
+            alt="Ice Coffee"
+            width="132px"
+            class="modal-window-purchase-item-photo"
+          />
+        </div>
+        ice coffee
+      </li>
+      <li class="modal-window-purchase-item orange">
+        <div class="buy-now-item-wrapper milkshake-wrapper">
+          <img
+            srcset="
+              ./images/modal/modal-milkshake.jpg    1x,
+              ./images/modal/modal-milkshake@2x.jpg 2x
+            "
+            src="./images/modal/modal-milkshake.jpg"
+            alt="Milkshake"
+            width="132px"
+            class="modal-window-purchase-item-photo"
+          />
+        </div>
+        milkshake
+      </li>
+    </ul>
 
-      <!-- ЗАЛИШИВ ДЛЯ МОДАЛКИ BUY NOW -->
-
+    <form class="mobile-window-buy-now-form">
+      <input
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+$"
+        minlength="2"
+        class="modal-window-buynow-input-field user-name"
+      />
+      <input
+        type="tel"
+        name="user-tel"
+        placeholder="Phone"
+        required
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="XXX-XXX-XX-XX"
+        class="modal-window-buynow-input-field phone-number"
+      />
+      <textarea
+        name="user-message"
+        placeholder="Comment"
+        class="modal-window-buynow-input-field user-comment"
+      ></textarea>
+      <button type="submit" class="modal-form-buy-now-submit-btn">
+        Submit
+      </button>
+    </form>
   </div>
 
   <!-- МОДАЛКА ВІДЕО -->
   <div class="modal-made modal-js" data-modal="3">
-      <button class="made-button-close js-modal-close">
-          <svg class="made-svg-close" width="13" height="12" >
-              <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-      </button>
-      <h2 class="modal-made-header">How it’s made?</h2>
-      <div class="modal-made-iframe">
-        <iframe class="made-iframe-youtube" src="https://www.youtube.com/embed/lycwguWbDUA"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen>
-        </iframe>
-      </div>
-      
-        <p class="modal-made-text">
-          Of all the available and favorite delicacies, homemade ice cream is not only the tastiest, 
-          but also, of course, the most useful. By preparing the dessert yourself, you will 
-          be sure that the products differ in sweet additives and you will be able to get exactly.
-        </p>
+    <button class="made-button-close js-modal-close">
+      <svg class="made-svg-close" width="13" height="12">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="modal-made-header">How it’s made?</h2>
+    <div class="modal-made-iframe">
+      <iframe
+        class="made-iframe-youtube"
+        src="https://www.youtube.com/embed/lycwguWbDUA"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
 
+    <p class="modal-made-text">
+      Of all the available and favorite delicacies, homemade ice cream is not
+      only the tastiest, but also, of course, the most useful. By preparing the
+      dessert yourself, you will be sure that the products differ in sweet
+      additives and you will be able to get exactly.
+    </p>
   </div>
 
   <!-- МОДАЛКА ЛОКАЦІЯ -->
   <div class="modal-map modal-js" data-modal="4">
     <button class="made-button-close js-modal-close">
-        <svg class="made-svg-close" width="13" height="12">
-            <use href="./images/icons.svg#icon-close"></use>
-        </svg>
+      <svg class="made-svg-close" width="13" height="12">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
     </button>
     <h2 class="modal-map-header">Our Locations</h2>
     <div class="modal-map-iframe">
-      <iframe class="map-iframe-location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.
+      <iframe
+        class="map-iframe-location"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.
           391229181369!2d30.421110499999998!3d50.508286999999996!2m3!1f0!2f0
           !3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd65d0c98553%3A0x2f86922dc72aec94!
           2sTeneroCaffe!5e0!3m2!1suk!2sua!4v1674518878188!5m2!1suk!2sua"
-          style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
       </iframe>
     </div>
     <div class="modal-map-link">
-      <a href="https://goo.gl/maps/wFS24yk34yZ7sQWSA" target="_blank">Open map</a>
+      <a href="https://goo.gl/maps/wFS24yk34yZ7sQWSA" target="_blank"
+        >Open map</a
+      >
     </div>
-
   </div>
-
 
   <!-- МОДАЛКА ФРАНШИЗА -->
-  <div class="modal-franchise modal-js" data-modal="5">
-
-
-  </div>
-
-
+  <div class="modal-franchise modal-js" data-modal="5"></div>
 </div>
 
-
-  <div class="overlay js-overlay-modal"></div>
+<div class="overlay js-overlay-modal"></div>
