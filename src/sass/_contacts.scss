@@ -112,7 +112,7 @@
     align-items: center;
 }
 
-.contacts-item-button {
+.cont-btn-one, .cont-btn-two {
     width: 196px;
     color: #000;
     border-color: rgba(0, 0, 0, 0);
@@ -126,6 +126,7 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
+    transition: transform .35s cubic-bezier(.4, -.74, .48, 1.53), background .35s cubic-bezier(.4, -.74, .48, 1.53);
 }
 
 .cont-btn-one {
@@ -141,13 +142,15 @@
 .cont-btn-one:hover {
     background: #0A8817;
     border-radius: 10px;
-    transition: background 250ms var(--cubic-bezier);
+    // transition: background 250ms var(--cubic-bezier);
+    transform: scale(1.1);
 }
 
 .cont-btn-two:hover {
     border: 2px solid #0A8817;
     border-radius: 10px;
     transition: border 250ms var(--cubic-bezier);
+    transform: scale(1.1);
 }
 
 .cont-btn-one:focus {
