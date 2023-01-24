@@ -52,9 +52,14 @@
 }
 
 .products-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding-top: 123px;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
     width: 200px;
 }
 
