@@ -31,7 +31,7 @@
    line-height: 0.97;
 }
 
-.hero-products-button {
+.hero-products {
    width: 108px;
    height: 38px;
    margin-right: 12px;
@@ -43,7 +43,7 @@
    border: 2px solid var(--color-brand);
    border-radius: 8px;
 }
-.hero-instruction-button {
+.hero-instruction {
    width: 100px;
    height: 24px;
 
@@ -88,7 +88,7 @@ screen and (min-resolution: 2dppx) {
       padding-top: 40px;
       padding-bottom: 150;
    }
-   .hero-products-button {
+   .hero-products {
       margin-bottom: 0;
    }
    .hero-trio-image {
@@ -118,16 +118,20 @@ screen and (min-resolution: 2dppx) {
    .hero-title {
       margin-bottom: 24px;
    }
-   .hero-products-button {
+   .hero-products {
       margin-bottom: 12px;
    }
-   .hero-instruction-button {
+   .hero-instruction {
       width: 114px;
    }
    .hero-plate-image-and-text-with-arrow {
       display: flex;
       align-items: center;
       column-gap: 32px;
+   }
+   .hero-plate-image {
+      // щоб жовті точки не заходили на тарілку
+      z-index: 1;
    }
    .hero-text {
       width: 139px;
@@ -207,12 +211,12 @@ screen and (min-resolution: 2dppx) {
    .hero-title_passion {
       font-size: inherit;
    }
-   .hero-products-button {
+   .hero-products {
       width: 134px;
       height: 42px;
       margin-bottom: 42px;
    }
-   .hero-instruction-button {
+   .hero-instruction {
       width: 154px;
       height: 40px;
    }
@@ -230,7 +234,6 @@ screen and (min-resolution: 2dppx) {
       bottom: -65px;
    }
    .hero-dots-image {
-      right: 0;
       bottom: -65px;
       width: 1200px;
       height: 383px;
