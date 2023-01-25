@@ -29,6 +29,7 @@
   line-height: 2.55;
   border-radius: 10px;
   margin-bottom: 32px;
+  min-height: 223px;
 }
 .customer-author {
   color: var(--color-text);
@@ -63,6 +64,7 @@
   .customer-body {
     font-size: 14px;
     padding: 28px 80px;
+    min-height: 128px;
   }
 }
 
