@@ -51,7 +51,7 @@
    line-height: 1.25;
    border: 2px solid var(--color-brand);
    border-radius: 8px;
-   transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53), border-color 350ms cubic-bezier(.4, -.74, .48, 1.53);
+   transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53), border-color 350ms cubic-bezier(.4, -.74, .48, 1.53), outline-color 350ms cubic-bezier(.4, -.74, .48, 1.53);
 }
 .hero-products:hover {
    transform: scale(1.1);
@@ -71,7 +71,7 @@
 }
 .hero-instruction:hover {
    transform: scale(1.1);
-   color: rgb(232, 85, 232);
+   color: #0A8817;
 }
 
 .hero-plate-image-and-text-with-arrow,
@@ -241,8 +241,10 @@
       line-height: 1.29;
    }
    .hero-products:focus {
-      border-color: #0A8817;
+      transform: scale(1.1);
       color: var(--color-title);
+      outline: 2px solid #0A8817;
+      border: transparent;
    }
    .hero-instruction {
       width: 154px;
@@ -250,6 +252,11 @@
 
       font-size: 14px;
       line-height: 1.21;
+   }
+   .hero-instruction:focus {
+      transform: scale(1.1);
+      color: var(--color-title);
+      outline: transparent;
    }
    .hero-plate-image-and-text-with-arrow {
       column-gap: 16px;
