@@ -26,11 +26,12 @@
   visibility: hidden;
 
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
   width: 280px;
+  height: 459px;
   padding: 28px;
   border: 2px solid var(--color-brand);
   border-radius: 10px;
@@ -69,6 +70,7 @@
 @media screen and (min-width: 768px) {
   .modal-made {
     width: 568px;
+    height: 449px;
     padding-top: 32px 60px;
   }
   .modals-header {
@@ -100,12 +102,13 @@
   visibility: hidden;
 
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
   overflow-y: hidden;
   width: 280px;
+  height: 365px;
   padding: 28px;  
   border: 2px solid var(--color-brand);
   border-radius: 10px;
@@ -177,6 +180,7 @@
   .modal-map {
     top: 50%;
     width: 568px;
+    height: 458px;
     padding: 32px 60px;
   }
   .modals-location-header {
@@ -209,13 +213,14 @@
   visibility: hidden;
 
   position: fixed;
-  top: 40%;
+  top: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   z-index: 30;
   overflow-y: scroll;
   overflow-x: hidden;
   width: 280px;
+  height: 100vh;
   padding: 28px;
   border: 2px solid var(--color-brand);
   border-radius: 10px;
@@ -307,8 +312,8 @@
 /*================= DESKTOP VERSION =================*/
 @media screen and (min-width: 768px) {
   .modal-franchise {
-    top: 50%;
     width: 568px;
+    // height: 668px;
     padding: 32px 60px;
   }
   .modals-header-franchise {
@@ -356,3 +361,13 @@
     padding-right: 34px;
   }
 }
+
+
+@media screen and (min-width: 1200px) {
+  .modal-franchise {
+    width: 568px;
+    height: 668px;
+    padding: 32px 60px;
+    overflow-y: hidden;
+  }
+  }
