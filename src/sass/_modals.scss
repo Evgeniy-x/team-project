@@ -39,7 +39,8 @@
   padding-right: 20px;
   padding-bottom: 28px;
   padding-top: 28px;
-  border-radius: 3px;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
   background-color: #fff;
   transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -205,10 +206,14 @@
 
 /*================= SUBMIT-BUTTON =================*/
 .modal-form-submit-btn {
-  display: inline-block;
-  align-self: center;
-  width: 132px;
-  height: 42px;
+  display: block;
+  max-width: 132px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-right: auto;
+  margin-left: auto;
 
   background: #f8d24e;
   border-radius: 10px;
@@ -304,6 +309,13 @@
     height: 84px;
     margin-bottom: 32px;
   }
+  .modal-form-submit-btn {
+    max-width: 121px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 
 /*================= BUY NOW MODAL WINDOW =================*/
@@ -330,7 +342,8 @@
   padding-right: 28px;
   padding-bottom: 29px;
   padding-top: 28px;
-  border-radius: 3px;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
   background-color: #fff;
   transition: opacity 250ms var(--cubic-bezier),
     visibility 250ms var(--cubic-bezier);
@@ -551,6 +564,15 @@
   color: #fff;
 }
 
+.modal-window-input-field:focus {
+  outline: none;
+  border-color: var(--color-brand);
+}
+.modal-window-buynow-input-field:focus {
+  outline: none;
+  border-color: var(--color-brand);
+}
+
 @media screen and (max-width: 479px) {
   .modal-window-buynow-input-field {
     width: 100%;
@@ -562,6 +584,7 @@
 /*================= DESKTOP VERSION =================*/
 @media screen and (min-width: 1200px) {
   .modal-buy {
+    overflow-y: hidden;
     max-width: 568px;
     max-height: 644px;
     padding-top: 32px;
