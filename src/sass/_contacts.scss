@@ -238,6 +238,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .contacts-container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .contacts-list {
         display: flex;
         margin-bottom: 60px;
