@@ -26,14 +26,11 @@
   visibility: hidden;
 
   position: fixed;
-  top: 37%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
-  width: 100vw;
-  max-width: 280px;
-  height: 100vh;
-  max-height: 459px;
+  width: 280px;
   padding: 28px;
   border: 2px solid var(--color-brand);
   border-radius: 10px;
@@ -69,27 +66,22 @@
   line-height: 1.2;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal-made {
-    width: 100vw;
-    max-width: 568px;
-    height: 100vh;
-    max-height: 449px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 568px;
+    padding-top: 32px 60px;
   }
   .modals-header {
     font-size: 20px;
     line-height: 1.4;
-    margin-bottom: 32px;
   }
   .made-iframe-youtube {
     display: block;
     height: 205px;
     width: 448px;
     border-radius: 10px;
+    margin: 0 auto;
+    
   }
 
   .modal-made-iframe {
@@ -108,16 +100,13 @@
   visibility: hidden;
 
   position: fixed;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 30;
   overflow-y: hidden;
-  width: 100vw;
-  max-width: 280px;
-  height: 100vh;
-  max-height: 365px;
-  padding: 28px;
+  width: 280px;
+  padding: 28px;  
   border: 2px solid var(--color-brand);
   border-radius: 10px;
   background-color: var(--color-title);
@@ -184,17 +173,11 @@
 
 /*================= DESKTOP VERSION =================*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal-map {
-    top: 51%;
-    width: 100vw;
-    max-width: 568px;
-    height: 100vh;
-    max-height: 458px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 60px;
-    padding-right: 60px;
+    top: 50%;
+    width: 568px;
+    padding: 32px 60px;
   }
   .modals-location-header {
     font-size: 20px;
@@ -226,20 +209,14 @@
   visibility: hidden;
 
   position: fixed;
-  top: 54%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -53%);
+  transform: translate(-50%, -50%);
   z-index: 30;
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 100vw;
-  max-width: 280px;
-  height: 100vh;
-  max-height: 674px;
-  padding-top: 28px;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-bottom: 28px;
+  width: 280px;
+  padding: 28px;
   border: 2px solid var(--color-brand);
   border-radius: 10px;
   background-color: var(--color-title);
@@ -328,16 +305,11 @@
 }
 
 /*================= DESKTOP VERSION =================*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal-franchise {
-    width: 100vw;
-    max-width: 568px;
-    height: 100vh;
-    max-height: 668px;
-    padding-top: 32px;
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-bottom: 32px;
+    top: 50%;
+    width: 568px;
+    padding: 32px 60px;
   }
   .modals-header-franchise {
     max-width: 280px;

@@ -22,11 +22,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
-  width: 100vw;
-  max-width: 280px;
-  height: 100vh;
-  max-height: 968px;
-
+  width: 280px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -35,10 +31,7 @@
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 28px;
-  padding-top: 28px;
+  padding: 28px 20px;
   border-radius: 10px;
   border: 2px solid #f8d24e;
   background-color: #fff;
@@ -252,7 +245,7 @@
   }
 }
 /*================= DESKTOP VERSION =================*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .product-ingredients-header {
     font-family: var(--font-main);
     font-weight: 400;
@@ -262,12 +255,8 @@
     margin-bottom: 24px;
   }
   .modal-ingredients {
-    max-height: 996px;
-    max-width: 568px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 32px;
-    padding-top: 32px;
+    width: 568px;
+    padding: 32px 40px;
   }
   .img-wrapper::after {
     z-index: -10;
@@ -293,6 +282,7 @@
 
   .product-ingredients {
     width: 488px;
+    margin: 0 auto;
   }
   .product-ingredients-row.last {
     margin-bottom: 48px;
@@ -325,10 +315,7 @@
 
   overflow-y: scroll;
   overflow-x: hidden;
-  width: 100%;
-  max-width: 280px;
-  height: 100%;
-  max-height: 991px;
+  width: 280px;
 
   position: fixed;
   top: 50%;
@@ -338,12 +325,9 @@
 
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
-  padding-left: 28px;
-  padding-right: 28px;
-  padding-bottom: 29px;
-  padding-top: 28px;
+  padding: 28px;
   border-radius: 10px;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--color-brand);
   background-color: #fff;
   transition: opacity 250ms var(--cubic-bezier),
     visibility 250ms var(--cubic-bezier);
@@ -582,15 +566,11 @@
   }
 }
 /*================= DESKTOP VERSION =================*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .modal-buy {
     overflow-y: hidden;
-    max-width: 568px;
-    max-height: 644px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-right: 54px;
-    padding-left: 54px;
+    width: 568px;
+    padding: 32px 54px;
   }
   .modal-buy-mow-header {
     font-size: 20px;

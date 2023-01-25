@@ -4,10 +4,10 @@
 
 .header-inner {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
-    position: relative;
 }
 
 .logo-icon {
@@ -20,11 +20,12 @@
     position: fixed;
     background-color: var(--color-backgraund);
     width: 100%;
-    top: 0 ;
+    top: 0;
+    left: 0;
     height: 100vh;
     z-index: 1000;
-    left: 0;
-    transition: left 0.3s ease-in-out;
+    
+    transition: left 250ms var(--cubic-bezier);
 }
 
 .icon-close-btn {
@@ -48,7 +49,7 @@
     line-height: 1.2;
     color: var(--color-brand);
     
-    transition: color 0.3s ease-in-out;
+    transition: color 250ms var(--cubic-bezier);
 }
 
 .mobile-menu-link:focus {
