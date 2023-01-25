@@ -152,11 +152,8 @@
    .hero-plate-image:hover {
       transform: rotate(90deg);
    }
-   .hero-text-with-arrow {
-      padding-top: 35px;
-   }
    .hero-text {
-      width: 139px;
+      width: 145px;
       margin-bottom: 12px;
 
       color: var(--color-title);
@@ -260,6 +257,9 @@
    .hero-plate-image {
       // ставим по дефолтну, так як на десктопі ця властивість не потрібна
       z-index: initial;
+   }
+   .hero-text-with-arrow {
+      padding-top: 50px;
    }
    .hero-text {
       width: 200px;
