@@ -4,14 +4,23 @@
    justify-content: center;
    align-items: center;
 }
-
 .hero {
-   padding-top: 50px;
-   padding-bottom: 237px;
    background-color: var(--color-backgraund-dark);
 }
 .hero-container {
    position: relative;
+   padding-top: 50px;
+   padding-bottom: 237px;
+   background-image: url(../images/hero/dots-mobile-320.png);
+   background-repeat: no-repeat;
+   background-position: bottom right;
+}
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-container {
+      background-image: url(../images/hero/dots-mobile-320@2x.png);
+   }
 }
 
 .hero-title {
@@ -74,61 +83,47 @@
    // щоб жовті точки не заходили на картинку (морозиво в стаканчику)
    z-index: 1;
    right: 60px;
-   bottom: -237px;
+   bottom: 0;
    transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
 }
 .hero-trio-image:hover {
-   transform: scale(1.1);
-}
-.hero-dots-image {
-   position: absolute;
-   pointer-events: none;
-   right: 0;
-   bottom: -237px;
-
-   width: 320px;
-   height: 50px;
-   background: url(../images/hero/dots-mobile-320.png);
-}
-@media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx) {
-   .hero-dots-image {
-      background-image: url(../images/hero/dots-mobile-320@2x.png);
-   }
+   transform: scale(1.05);
 }
 
 @media screen and (min-width: 480px) {
-   .hero {
+   .hero-container {
       padding-top: 40px;
       padding-bottom: 150;
+      background-image: url(../images/hero/dots-mobile-480.png);
+   }
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-container {
+         background-image: url(../images/hero/dots-mobile-480@2x.png);
+      }
    }
    .hero-products {
       margin-bottom: 0;
    }
    .hero-trio-image {
       right: 20px;
-      bottom: -150px;
-   }
-   .hero-dots-image {
-      bottom: -150px;
-      width: 330px;
-      height: 52px;
-      background: url(../images/hero/dots-mobile-480.png);
-   }
-   @media screen and (min-device-pixel-ratio: 2),
-   screen and (min-resolution: 192dpi),
-   screen and (min-resolution: 2dppx) {
-      .hero-dots-image {
-         background-image: url(../images/hero/dots-mobile-480@2x.png);
-      }
    }
 }
 
 @media screen and (min-width: 768px) {
-   .hero {
+   .hero-container {
       padding-top: 14px;
       padding-bottom: 12px;
+      background-image: url(../images/hero/dots-tablet.png);
+      background-position: right bottom;
+   }
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-container {
+         background-image: url(../images/hero/dots-tablet@2x.png);
+      }
    }
    .hero-title {
       margin-bottom: 24px;
@@ -150,10 +145,10 @@ screen and (min-resolution: 2dppx) {
       transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
    }
    .hero-plate-image:hover {
-      transform: scale(1.1);
+      transform: rotate(90deg);
    }
    .hero-text-with-arrow {
-      margin-top: 40px;
+      padding-top: 35px;
    }
    .hero-text {
       width: 139px;
@@ -178,20 +173,6 @@ screen and (min-resolution: 2dppx) {
    }
    .hero-trio-image {
       right: 92px;
-      bottom: -12px;
-   }
-   .hero-dots-image {
-      bottom: -12px;
-      width: 768px;
-      height: 68px;
-      background: url(../images/hero/dots-tablet.png);
-   }
-   @media screen and (min-device-pixel-ratio: 2),
-   screen and (min-resolution: 192dpi),
-   screen and (min-resolution: 2dppx) {
-      .hero-dots-image {
-         background-image: url(../images/hero/dots-tablet@2x.png);
-      }
    }
    .hero-cafes-and-food-trucks {
       display: block;
@@ -225,9 +206,17 @@ screen and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 1200px) {
-   .hero {
+   .hero-container {
       padding-top: 45px;
       padding-bottom: 65px;
+      background-image: url(../images/hero/dots-desktop.png);
+   }
+   @media screen and (min-device-pixel-ratio: 2),
+   screen and (min-resolution: 192dpi),
+   screen and (min-resolution: 2dppx) {
+      .hero-container {
+         background-image: url(../images/hero/dots-desktop@2x.png);
+      }
    }
    .hero-title {
       width: 367px;
@@ -262,7 +251,7 @@ screen and (min-resolution: 2dppx) {
    }
    .hero-plate-image {
       // ставим по дефолтну, так як на десктопі ця властивість не потрібна
-      z-index: auto;
+      z-index: initial;
    }
    .hero-text {
       width: 200px;
@@ -270,22 +259,6 @@ screen and (min-resolution: 2dppx) {
 
       font-size: 14px;
       line-height: 1.43;
-   }
-   .hero-trio-image {
-      bottom: -65px;
-   }
-   .hero-dots-image {
-      bottom: -65px;
-      width: 1200px;
-      height: 383px;
-      background: url(../images/hero/dots-desktop.png);
-   }
-   @media screen and (min-device-pixel-ratio: 2),
-   screen and (min-resolution: 192dpi),
-   screen and (min-resolution: 2dppx) {
-      .hero-dots-image {
-         background-image: url(../images/hero/dots-desktop@2x.png);
-      }
    }
    .hero-cafes-and-food-trucks {
       right: 16px;
