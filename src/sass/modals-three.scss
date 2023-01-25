@@ -1,57 +1,3 @@
-.modal-made,
-.modal-map,
-.modal-franchise {
-    opacity: 0;
-    visibility: hidden;
-  
-    position: fixed;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 30;
-    overflow-y: scroll;
-    width: 280px;
-    padding: 28px;
-    border: 2px solid var(--color-brand);
-    border-radius: 10px;
-    background-color: var(--color-title);
-    transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1), visibility 350ms  cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.modals-header {
-    font-family: var(--font-logo);
-    font-size: 16px;
-    line-height: 1.5;
-    color: var(--color-text);
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.modal-made-iframe {
-    margin-bottom: 20px;  
-}
-
-.modal-map-iframe {
-    margin-bottom: 24px;  
-}
-
-.made-iframe-youtube,
-.map-iframe-location {
-    display: block;
-    height: 199px;
-    width: 224px;
-    border-radius: 10px;
-}
-
-.modal-made-text,
-.modal-franchise-text {
-    font-size: 14px;
-    line-height: 1.4;
-}
-
 .modal-made.active,
 .modal-map.active,
 .modal-franchise.active,
@@ -61,76 +7,382 @@
 }
 
 .modals-button-close {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 0;
 }
 
+/*================================== MODAL-WINDOW-VIDEO ==================================*/
 
-// LOCATION//   
+.modal-made {
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  width: 100vw;
+  max-width: 280px;
+  height: 100vh;
+  max-height: 459px;
+  padding: 28px;
+  border: 2px solid var(--color-brand);
+  border-radius: 10px;
+  background-color: var(--color-title);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modals-header {
+  font-family: var(--font-logo);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.made-iframe-youtube {
+  display: block;
+  height: 199px;
+  width: 224px;
+  border-radius: 10px;
+}
+
+.modal-made-iframe {
+  margin-bottom: 20px;
+}
+
+.modal-made-text {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-made {
+    width: 100vw;
+    max-width: 568px;
+    height: 100vh;
+    max-height: 449px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .modals-header {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+  .made-iframe-youtube {
+    display: block;
+    height: 205px;
+    width: 448px;
+    border-radius: 10px;
+  }
+
+  .modal-made-iframe {
+    margin-bottom: 32px;
+  }
+
+  .modal-made-text {
+    font-size: 16px;
+    line-height: 1.37;
+  }
+}
+/*================================== MODAL-WINDOW-OUR LOCATION ==================================*/
 
 .modal-map {
-    margin-top: 20px;
-    text-align: center;
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  overflow-y: hidden;
+  width: 100vw;
+  max-width: 280px;
+  height: 100vh;
+  max-height: 365px;
+  padding: 28px;
+  border: 2px solid var(--color-brand);
+  border-radius: 10px;
+  background-color: var(--color-title);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modals-location-header {
+  text-align: center;
+
+  font-family: var(--font-logo);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+.map-iframe-location {
+  width: 224px;
+  height: 199px;
+}
+
+.map-iframe-location {
+  display: block;
+  height: 199px;
+  width: 224px;
+  border-radius: 10px;
+}
+
+.modal-map-iframe {
+  margin-bottom: 20px;
 }
 
 .modal-map-link {
-    display: inline-block;
-    padding: 16px 32px;
-    background-color: var(--color-brand);
-    color: var(--color-text);
-    border-radius: 10px;
-    font-weight: 600;
-    margin: 0 auto;
+  display: block;
+  max-width: 134px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: var(--color-brand);
+  color: var(--color-text);
+  font-size: 12px;
+  line-height: 1.25;
+  border-radius: 10px;
+  font-weight: 600;
+
+  transition: background 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-        
-    .modal-made,
-    .modal-map {
-        top: 50%;
-        width: 568px;
-        padding: 32px 60px;
-        overflow-y: hidden;
-    }
-
-    .modal-map-iframe {
-        margin-bottom: 32px;  
-    }
-
-    .made-iframe-youtube {
-        width: 448px;
-        height: 205px;
-    }
-
-    .map-iframe-location {
-        width: 448px;
-        height: 260px;
-    }
+.modal-map-link:hover {
+  background: #0a8817;
+  color: #000;
 }
 
+.modal-map-link:focus {
+  background: #0a8817;
+  color: #fff;
+}
+
+/*================= DESKTOP VERSION =================*/
+
+@media screen and (min-width: 1200px) {
+  .modal-map {
+    top: 51%;
+    width: 100vw;
+    max-width: 568px;
+    height: 100vh;
+    max-height: 458px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .modals-location-header {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+  .map-iframe-location {
+    width: 448px;
+    height: 260px;
+  }
+  .modal-map-iframe {
+    margin-bottom: 32px;
+  }
+
+  .modal-map-link {
+    max-width: 145px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+/*================================== MODAL-WINDOW-FRANCHISE ==================================*/
 
 .modal-franchise {
-    padding: 28px 30px;
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -53%);
+  z-index: 30;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  max-width: 280px;
+  height: 100vh;
+  max-height: 674px;
+  padding-top: 28px;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-bottom: 28px;
+  border: 2px solid var(--color-brand);
+  border-radius: 10px;
+  background-color: var(--color-title);
+  transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.franchise-form {
-    margin-top: 24px;
-    
+.modals-header-franchise {
+  font-family: var(--font-logo);
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.modal-franchise-text {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+/*================= FRANCHISE SUBMIT FORM =================*/
 .franchise-input {
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-    width: 224px;
-    height: 32px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+  margin-bottom: 12px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  width: 224px;
+  height: 32px;
+
+  transition: border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.franchise-input:focus {
+  outline: none;
+  border-color: var(--color-brand);
+}
+
+#franchise-comment {
+  width: 224px;
+  height: 64px;
+  margin-bottom: 24px;
+  resize: none;
+}
+
+/*================= FRANCHISE SUBMIT FORM BUTTON =================*/
+.franchise-form-button {
+  display: block;
+  max-width: 114px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 34px;
+  padding-right: 34px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background: #f8d24e;
+  border-radius: 10px;
+  border-color: transparent;
+
+  font-family: var(--color-title);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  color: #131313;
+  transition: background 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-form-button:hover {
+  background: #0a8817;
+  color: #000;
+}
+
+.franchise-form-button:focus {
+  background: #0a8817;
+  color: #fff;
+}
+
+/*================= DESKTOP VERSION =================*/
+@media screen and (min-width: 1200px) {
+  .modal-franchise {
+    overflow-y: hidden;
+    width: 100vw;
+    max-width: 568px;
+    height: 100vh;
+    max-height: 668px;
+    padding-top: 32px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 32px;
+  }
+  .modals-header-franchise {
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+  }
+  .modal-franchise-text {
+    max-width: 448px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+
+    font-size: 16px;
+    line-height: 1.37;
+  }
+  .franchise-form {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .franchise-input {
+    margin-bottom: 16px;
+
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    width: 368px;
+    height: 42px;
+
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #franchise-comment {
+    width: 368px;
+    height: 84px;
+    margin-bottom: 32px;
+  }
+
+  .franchise-form-button {
+    max-width: 121px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+}
