@@ -329,8 +329,7 @@
   border-radius: 10px;
   border: 2px solid var(--color-brand);
   background-color: #fff;
-  transition: opacity 250ms var(--cubic-bezier),
-    visibility 250ms var(--cubic-bezier);
+  transition: opacity 250ms var(--cubic-bezier), visibility 250ms var(--cubic-bezier);
 }
 
 .modal-buy.active,
@@ -568,7 +567,6 @@
 /*================= DESKTOP VERSION =================*/
 @media screen and (min-width: 768px) {
   .modal-buy {
-    overflow-y: hidden;
     width: 568px;
     padding: 32px 54px;
   }
