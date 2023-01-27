@@ -74,8 +74,8 @@
    color: #0A8817;
 }
 
-.hero-plate-image-and-text-with-arrow,
-.hero-cafes-and-food-trucks {
+.hero-plate-box,
+.hero-main-box__amount-places {
    display: none;
 }
 
@@ -106,7 +106,7 @@
          background-image: url(../images/hero/dots-mobile-480@2x.png);
       }
    }
-   .hero-products {
+   .hero-main-box__title-and-buttons {
       margin-bottom: 0;
    }
    .hero-trio-image {
@@ -130,26 +130,63 @@
          background-image: url(../images/hero/dots-tablet@2x.png);
       }
    }
+
+   .hero-main-box {
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+   }
+   .hero-main-box__title-and-buttons {
+      margin-bottom: 12px;
+   }
    .hero-title {
       margin-bottom: 24px;
-   }
-   .hero-products {
-      margin-bottom: 12px;
    }
    .hero-instruction {
       width: 114px;
    }
-   .hero-plate-image-and-text-with-arrow {
+   // для всієї div-коробки - align-items: center; не допоможе бо по макету блок цифр справа мають маленький padding-top
+   .hero-main-box__amount-places {
+      padding-top: 14px;
+   }
+   .hero-main-box__amount-places {
+      display: block;
+   }
+   .hero-cafes {
+      margin-bottom: 20px;
+   }
+   .hero-numbers {
+      margin-bottom: 4px;
+
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 1.21;
+      text-align: right;
+      letter-spacing: 0.04em;
+      transition: transform 550ms cubic-bezier(.4, -.74, .48, 1.53);
+   }
+   .hero-cafes:hover .hero-numbers,
+   .hero-food-trucks:hover .hero-numbers {
+      transform: rotate(360deg);
+   }
+   .hero-numbers-title {
+      color: var(--color-title);
+      font-size: 8px;
+      line-height: 1.25;
+      text-align: right;
+   }
+
+   .hero-plate-box {
       display: flex;
       align-items: center;
       column-gap: 32px;
    }
-   .hero-plate-image {
+   .hero-plate-box__image {
       // щоб жовті точки не заходили на тарілку
       z-index: 1;
       transition: transform 350ms cubic-bezier(.4, -.74, .48, 1.53);
    }
-   .hero-plate-image:hover {
+   .hero-plate-box__image:hover {
       transform: rotate(90deg);
    }
    .hero-text {
@@ -173,37 +210,10 @@
       height: 16px;
       fill: var(--color-title);
    }
+
+   // Trio-image
    .hero-trio-image {
       right: 92px;
-   }
-   .hero-cafes-and-food-trucks {
-      display: block;
-      position: absolute;
-      right: 32px;
-      top: 28px;
-   }
-   .hero-cafes-box {
-      margin-bottom: 20px;
-   }
-   .hero-numbers {
-      margin-bottom: 4px;
-
-      font-weight: 900;
-      font-size: 28px;
-      line-height: 1.21;
-      text-align: right;
-      letter-spacing: 0.04em;
-      transition: transform 550ms cubic-bezier(.4, -.74, .48, 1.53);
-   }
-   .hero-cafes-box:hover .hero-numbers,
-   .hero-food-trucks-box:hover .hero-numbers {
-      transform: rotate(360deg);
-   }
-   .hero-numbers-title {
-      color: var(--color-title);
-      font-size: 8px;
-      line-height: 1.25;
-      text-align: right;
    }
 }
 
@@ -223,6 +233,10 @@
          background-image: url(../images/hero/dots-desktop@2x.png);
       }
    }
+
+   .hero-main-box__title-and-buttons {
+      margin-bottom: 42px;
+   }
    .hero-title {
       width: 367px;
       font-size: 38px;
@@ -235,7 +249,6 @@
    .hero-products {
       width: 134px;
       height: 42px;
-      margin-bottom: 42px;
 
       font-size: 14px;
       line-height: 1.29;
@@ -258,28 +271,7 @@
       color: var(--color-title);
       outline: transparent;
    }
-   .hero-plate-image-and-text-with-arrow {
-      column-gap: 16px;
-   }
-   .hero-plate-image {
-      // ставим по дефолтну, так як на десктопі ця властивість не потрібна
-      z-index: initial;
-   }
-   .hero-text-with-arrow {
-      padding-top: 50px;
-   }
-   .hero-text {
-      width: 200px;
-      margin-bottom: 24px;
-
-      font-size: 14px;
-      line-height: 1.43;
-   }
-   .hero-cafes-and-food-trucks {
-      right: 16px;
-      top: 53px;
-   }
-   .hero-cafes-box {
+   .hero-cafes {
       margin-bottom: 16px;
    }
    .hero-numbers {
@@ -289,5 +281,24 @@
    .hero-numbers-title {
       font-size: 14px;
       line-height: 1.21;
+   }
+
+   .hero-plate-box {
+      column-gap: 16px;
+   }
+   // ставим по дефолтну, так як на десктопі ця властивість не потрібна
+   .hero-plate-box__image {
+      z-index: initial;
+   }
+   // для всієї div-коробки - align-items: center; не допоможе бо по макету текст зі стрілочкою мають маленький padding-top
+   .hero-plate-box__text-with-arrow {
+      padding-top: 50px;
+   }
+   .hero-text {
+      width: 200px;
+      margin-bottom: 24px;
+
+      font-size: 14px;
+      line-height: 1.43;
    }
 }

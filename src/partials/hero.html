@@ -1,25 +1,40 @@
 <section class="hero">
    <div class="hero-container container">
 
-      <!-- hero-title -->
-      <h1 class="hero-title">ice cream
-         made with
-         <span class="hero-title_passion">passion</span>
-      </h1>
-      <a href="#products" class="hero-products align-center">Products</a>
-      <a href="#about" class="hero-instruction align-center">How
-         it’s made?</a>
+      <div class="hero-main-box">
+         <!-- hero-title + two buttons -->
+         <div class="hero-main-box__title-and-buttons">
+            <h1 class="hero-title">ice cream
+               made with
+               <span class="hero-title_passion">passion</span>
+            </h1>
+            <a href="#products" class="hero-products align-center">Products</a>
+            <a href="#about" class="hero-instruction align-center">How
+               it’s made?</a>
+         </div>
+         <!-- цифри справа та їх заголовок -->
+         <div class="hero-main-box__amount-places">
+            <div class="hero-cafes">
+               <p class="hero-numbers">16</p>
+               <p class="hero-numbers-title">cafes</p>
+            </div>
+            <div class="hero-food-trucks">
+               <p class="hero-numbers">23</p>
+               <p class="hero-numbers-title">food trucks</p>
+            </div>
+         </div>
+      </div>
 
       <!-- plate-image + text with arrow -->
-      <div class="hero-plate-image-and-text-with-arrow">
-         <picture class="hero-plate-image">
+      <div class="hero-plate-box">
+         <picture class="hero-plate-box__image">
             <source srcset="./images/hero/plate-desktop.png, ./images/hero/plate-desktop@2x.png 2x"
                media="(min-width: 1200px)" />
             <img srcset="./images/hero/plate-tablet@2x.png 2x" src="./images/hero/plate-tablet.png"
                alt="trio ice-cream on a plate" />
          </picture>
 
-         <div class="hero-text-with-arrow">
+         <div class="hero-plate-box__text-with-arrow">
             <p class="hero-text">Delicious ice cream! For every taste! Plombir, fruit ice, chocolate! caramel! Let's
                remember summer!</p>
             <a href="#gallery" class="hero-arrow">
@@ -42,18 +57,6 @@
          <img srcset="./images/hero/trio-mobile-320@2x.png 2x" src="./images/hero/trio-mobile-320.png"
             class="hero-trio-image" alt="trio icecream in a glass" />
       </picture>
-
-      <!-- цифри та їх заголовок завжди будуть position-absolute відносно hero-контейнера-->
-      <div class="hero-cafes-and-food-trucks">
-         <div class="hero-cafes-box">
-            <p class="hero-numbers">16</p>
-            <p class="hero-numbers-title">cafes</p>
-         </div>
-         <div class="hero-food-trucks-box">
-            <p class="hero-numbers">23</p>
-            <p class="hero-numbers-title">food trucks</p>
-         </div>
-      </div>
 
    </div>
 </section>
